@@ -1,7 +1,7 @@
 package snake
 
 import (
-	"math/rand"
+	"time"
 )
 
 type move struct {
@@ -37,11 +37,28 @@ type Player interface {
 }
 
 type Human struct {
-	ID ID
+	ID        ID
+	Input     chan rune
+	Framerate time.Duration
 }
 
 func (h *Human) Play(gameState *Game) move {
-	return move{move: []float64{rand.Float64(), rand.Float64(), rand.Float64()}, ID: h.ID}
+	var key rune
+	select {
+	case key = <-h.Input:
+	case <-time.After(h.Framerate):
+		key = '0'
+	}
+	switch key {
+	case 'a':
+		return move{move: []float64{1, 0, 0}, ID: h.ID}
+	case 'w':
+		return move{move: []float64{0, 1, 0}, ID: h.ID}
+	case 'd':
+		return move{move: []float64{0, 0, 1}, ID: h.ID}
+	default:
+		return move{move: []float64{0, 1, 0}, ID: h.ID}
+	}
 }
 
 func (h *Human) SetID(id ID) {
