@@ -9,7 +9,7 @@ import (
 func TestNewGame(t *testing.T) {
 	width := 20
 	height := 20
-	game := NewGame(20, 20, []Player{&Human{}})
+	game, _ := NewGame(20, 20, []Player{&Human{}})
 	require.Equal(t, width, len(game.Board))
 	require.Equal(t, height, len(game.Board[0]))
 }

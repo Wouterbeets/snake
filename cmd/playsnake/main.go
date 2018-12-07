@@ -8,9 +8,9 @@ import (
 )
 
 func main() {
-	framerate := 300 * time.Millisecond
+	framerate := 50 * time.Millisecond
 	s := term.Screen{Input: make(chan [][]rune), UserInput: make(chan rune)}
-	g, err := snake.NewGame(20, 20, []snake.Player{&snake.Human{Input: s.UserInput, Framerate: framerate}})
+	g, err := snake.NewGame(30, 30, []snake.Player{&snake.Human{Input: s.UserInput, Framerate: framerate}, &snake.Random{}})
 	if err != nil {
 		panic(err)
 	}
@@ -44,7 +44,8 @@ func init() {
 	runes = map[int8]rune{
 		0: ' ',
 		1: '█',
-		2: '•',
-		3: 'x',
+		2: 'M',
+		3: '█',
+		4: '█',
 	}
 }

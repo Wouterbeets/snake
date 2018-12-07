@@ -93,7 +93,13 @@ func (g *Game) PlayRound() (gameOver bool, state Board) {
 	for move := range cmove {
 		if dead := g.PlayMove(move); dead {
 			fmt.Println(dead)
-			return true, state
+			for _, pos := range g.Players[move.ID].position {
+				g.Board[pos.y][pos.x] = empty
+			}
+			delete(g.Players, move.ID)
+			if len(g.Players) == 0 {
+				return true, state
+			}
 		}
 	}
 	fmt.Println("--------------------------------------------")

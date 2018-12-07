@@ -1,6 +1,7 @@
 package snake
 
 import (
+	"math/rand"
 	"time"
 )
 
@@ -63,4 +64,16 @@ func (h *Human) Play(gameState *Game) move {
 
 func (h *Human) SetID(id ID) {
 	h.ID = id
+}
+
+type Random struct {
+	ID ID
+}
+
+func (r *Random) Play(gameState *Game) move {
+	return move{move: []float64{rand.Float64(), rand.Float64(), rand.Float64()}, ID: r.ID}
+}
+
+func (r *Random) SetID(id ID) {
+	r.ID = id
 }
