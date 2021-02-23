@@ -1,7 +1,6 @@
 package snake
 
 import (
-	"fmt"
 	"math/rand"
 	"time"
 )
@@ -48,7 +47,6 @@ func (s *snake) head() position {
 	if s == nil || len(s.position) == 0 {
 		return position{0, 0}
 	}
-	fmt.Println("======pos=======", s)
 	return s.position[len(s.position)-1]
 }
 
@@ -78,7 +76,6 @@ func (s *snake) getDir() direction {
 
 func (s *snake) newHeadPos(m move) position {
 	dir := s.getDir()
-	fmt.Println(dir, s)
 	head := s.head()
 	c := m.getChoice()
 	var newPos position
