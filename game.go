@@ -77,22 +77,28 @@ func NewGame(height, width int, players []Player) (*Game, error) {
 // PlayRound processes one game tick
 func (g *Game) PlayRound() (gameOver bool, state Board) {
 	cmove := make(chan move, len(g.Players))
+	for i, p := range g.Players {
+		fmt.Printf("player %d %+v %+v %+v\n", i, p, p.Player, p.snake)
+	}
 
 	var wg sync.WaitGroup
 
 	for i := range g.Players {
 		wg.Add(1)
-		go func() {
+		go func(p Player) {
 			defer wg.Done()
-			cmove <- g.Players[i].Play(g)
-		}()
+			cmove <- p.Play(g)
+		}(g.Players[i])
 	}
 	wg.Wait()
 	close(cmove)
 
 	for move := range cmove {
+		if _, ok := g.Players[move.ID]; !ok {
+			continue
+		}
 		if dead := g.PlayMove(move); dead {
-			fmt.Println(dead)
+			fmt.Println("dead", dead)
 			for _, pos := range g.Players[move.ID].position {
 				g.Board[pos.y][pos.x] = empty
 			}
@@ -102,7 +108,7 @@ func (g *Game) PlayRound() (gameOver bool, state Board) {
 			}
 		}
 	}
-	fmt.Println("--------------------------------------------")
+	fmt.Println("------------------------------------------")
 	return false, g.Board
 }
 
@@ -124,10 +130,11 @@ func (g *Game) newFood() {
 
 // PlayMove takes a move and aplies is to the game
 func (g *Game) PlayMove(m move) (dead bool) {
+	fmt.Println("playmove-----------")
 	s := g.Players[m.ID].snake
 	newPos := s.newHeadPos(m)
 	g.print()
-	fmt.Println(newPos)
+	fmt.Println("newpos", newPos)
 	fmt.Println(m)
 
 	if g.Board[newPos.y][newPos.x] == food {

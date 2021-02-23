@@ -21,7 +21,7 @@ func newSnake(board Board, id ID) *snake {
 		pos := randomPos(len(board[0]), len(board))
 		x := pos.x
 		y := pos.y
-		if board[y][x] == empty && x > 1 && board[y][x-1] == empty {
+		if board[y][x] == empty && board[y][x+1] == empty && x > 1 {
 			board[y][x] = int8(id)
 			board[y][x+1] = int8(id)
 			s.position[0].x, s.position[0].y = x, y
@@ -45,10 +45,20 @@ func (s *snake) tail() position {
 }
 
 func (s *snake) head() position {
+	if s == nil || len(s.position) == 0 {
+		return position{0, 0}
+	}
+	fmt.Println("======pos=======", s)
 	return s.position[len(s.position)-1]
 }
 
 func (s *snake) body() position {
+	if s == nil || len(s.position) == 0 {
+		return position{0, 0}
+	}
+	if len(s.position) == 0 {
+		return position{0, 0}
+	}
 	return s.position[len(s.position)-2]
 }
 
@@ -68,7 +78,7 @@ func (s *snake) getDir() direction {
 
 func (s *snake) newHeadPos(m move) position {
 	dir := s.getDir()
-	fmt.Println(dir)
+	fmt.Println(dir, s)
 	head := s.head()
 	c := m.getChoice()
 	var newPos position

@@ -9,22 +9,14 @@ import (
 )
 
 func TestSnakeNewGame(t *testing.T) {
-	for i := 0; i < 100; i++ {
-		g, err := snake.NewGame(30, 30, []snake.Player{
-			&snake.Random{},
-			&snake.Random{},
-			&snake.Random{},
-			&snake.Random{},
-			&snake.Random{},
-			&snake.Random{},
-			&snake.Random{},
-			&snake.Random{},
-			&snake.Random{},
+	for i := 0; i < 25; i++ {
+		g, err := snake.NewGame(100, 100, []snake.Player{
 			&snake.Random{},
 			&snake.Random{},
 		})
 		require.NoError(t, err)
-		for i := 0; i < 1000; i++ {
+		fmt.Println(i, "==============================")
+		for i := 0; i < 100; i++ {
 			gameOver, _ := g.PlayRound()
 			if gameOver {
 				fmt.Println("game over at round", i)
