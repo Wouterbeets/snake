@@ -47,6 +47,9 @@ func main() {
 
 		// Sort so the best genome is at the end
 		evo.SortBy(genomes, evo.BySolved, evo.ByFitness, evo.ByComplexity, evo.ByAge)
+		for i := range genomes {
+			fmt.Printf("%.2f\n", genomes[i].Fitness)
+		}
 
 		// Output the best
 		best = genomes[len(genomes)-1]
@@ -158,24 +161,6 @@ type Evaluator struct {
 }
 
 func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
-	//player := NetWrapper{Ai: p.Network}
-	////g, err := snake.NewGame(20, 20, []snake.Player{
-	//&player,
-	//&snake.Random{},
-	//&snake.Random{},
-	//&snake.Random{},
-	//})
-	//
-	//rounds := 100
-	////var snakeLen int
-	//for i := 0; i < rounds; i++ {
-	////snakeLen = g.PlayerLen(player.ID)
-	//gameOver, _ := g.PlayRound()
-	//if gameOver || !g.Alive(player.ID) {
-	//r.Fitness = float64(i) / float64(rounds)
-	//break
-	//}
-	//}
 
 	type eval struct {
 		in *mat.Dense
@@ -227,8 +212,29 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 			}
 		}
 	}
-	//r.Fitness = r.Fitness + float64(snakeLen)
-	fmt.Println("f:", r.Fitness)
+	if r.Fitness < 17.0 {
+		return r, err
+	}
+	player := NetWrapper{Ai: p.Network}
+	g, err := snake.NewGame(20, 20, []snake.Player{
+		&player,
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+	})
+
+	rounds := 100
+	var snakeLen int
+	for i := 0; i < rounds; i++ {
+		//snakeLen = g.PlayerLen(player.ID)
+		gameOver, _ := g.PlayRound()
+		if gameOver || !g.Alive(player.ID) {
+			r.Fitness = float64(i) / float64(rounds)
+			break
+		}
+	}
+	r.Fitness += float64(snakeLen)
+	fmt.Printf("id: %d, fit: %.2f\n", p.ID, r.Fitness)
 	return r, err
 }
 
