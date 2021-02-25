@@ -24,7 +24,7 @@ type Game struct {
 // Board holds the game state
 type Board [][]int8
 
-type position struct {
+type Position struct {
 	x int
 	y int
 }
@@ -121,6 +121,36 @@ func (g *Game) newFood() {
 			g.Board[pos.y][pos.x] = food
 			return
 		}
+	}
+}
+
+func (g *Game) Vision(id ID) []int8 {
+	s := g.Players[id].snake
+	pos := s.head()
+	var vis []int8
+	switch s.getDir() {
+	case north:
+		vis = append(vis, g.Board[pos.y][pos.x-1])
+		vis = append(vis, g.Board[pos.y-1][pos.x])
+		vis = append(vis, g.Board[pos.y][pos.x+1])
+		return vis
+	case east:
+		vis = append(vis, g.Board[pos.y-1][pos.x])
+		vis = append(vis, g.Board[pos.y][pos.x+1])
+		vis = append(vis, g.Board[pos.y+1][pos.x])
+		return vis
+	case south:
+		vis = append(vis, g.Board[pos.y][pos.x+1])
+		vis = append(vis, g.Board[pos.y+1][pos.x])
+		vis = append(vis, g.Board[pos.y][pos.x-1])
+		return vis
+	case west:
+		vis = append(vis, g.Board[pos.y+1][pos.x])
+		vis = append(vis, g.Board[pos.y][pos.x-1])
+		vis = append(vis, g.Board[pos.y-1][pos.x])
+		return vis
+	default:
+		return vis
 	}
 }
 

@@ -6,16 +6,16 @@ import (
 )
 
 type snake struct {
-	position []position
+	position []Position
 }
 
-func randomPos(width, height int) position {
-	return position{x: rand.Intn(width-2) + 1, y: rand.Intn(height-2) + 1}
+func randomPos(width, height int) Position {
+	return Position{x: rand.Intn(width-2) + 1, y: rand.Intn(height-2) + 1}
 }
 
 func newSnake(board Board, id ID) *snake {
 	rand.Seed(time.Now().UnixNano())
-	s := snake{position: make([]position, 2)}
+	s := snake{position: make([]Position, 2)}
 	for {
 		pos := randomPos(len(board[0]), len(board))
 		x := pos.x
@@ -39,23 +39,23 @@ const (
 	east  direction = "east"
 )
 
-func (s *snake) tail() position {
+func (s *snake) tail() Position {
 	return s.position[0]
 }
 
-func (s *snake) head() position {
+func (s *snake) head() Position {
 	if s == nil || len(s.position) == 0 {
-		return position{0, 0}
+		return Position{0, 0}
 	}
 	return s.position[len(s.position)-1]
 }
 
-func (s *snake) body() position {
+func (s *snake) body() Position {
 	if s == nil || len(s.position) == 0 {
-		return position{0, 0}
+		return Position{0, 0}
 	}
 	if len(s.position) == 0 {
-		return position{0, 0}
+		return Position{0, 0}
 	}
 	return s.position[len(s.position)-2]
 }
@@ -74,76 +74,76 @@ func (s *snake) getDir() direction {
 	return west
 }
 
-func (s *snake) newHeadPos(m Move) position {
+func (s *snake) newHeadPos(m Move) Position {
 	dir := s.getDir()
 	head := s.head()
 	c := m.getChoice()
-	var newPos position
+	var newPos Position
 	switch dir {
 	case north:
 		if choice(c) == left {
-			newPos = position{
+			newPos = Position{
 				x: head.x - 1,
 				y: head.y,
 			}
 		} else if choice(c) == right {
-			newPos = position{
+			newPos = Position{
 				x: head.x + 1,
 				y: head.y,
 			}
 		} else if choice(c) == straight {
-			newPos = position{
+			newPos = Position{
 				x: head.x,
 				y: head.y - 1,
 			}
 		}
 	case south:
 		if choice(c) == left {
-			newPos = position{
+			newPos = Position{
 				x: head.x + 1,
 				y: head.y,
 			}
 		} else if choice(c) == right {
-			newPos = position{
+			newPos = Position{
 				x: head.x - 1,
 				y: head.y,
 			}
 		} else if choice(c) == straight {
-			newPos = position{
+			newPos = Position{
 				x: head.x,
 				y: head.y + 1,
 			}
 		}
 	case west:
 		if choice(c) == left {
-			newPos = position{
+			newPos = Position{
 				x: head.x,
 				y: head.y + 1,
 			}
 		} else if choice(c) == right {
-			newPos = position{
+			newPos = Position{
 				x: head.x,
 				y: head.y - 1,
 			}
 		} else if choice(c) == straight {
-			newPos = position{
+			newPos = Position{
 				x: head.x - 1,
 				y: head.y,
 			}
 		}
 	case east:
 		if choice(c) == left {
-			newPos = position{
+			newPos = Position{
 				x: head.x,
 				y: head.y - 1,
 			}
 		} else if choice(c) == right {
-			newPos = position{
+			newPos = Position{
 				x: head.x,
 				y: head.y + 1,
 			}
 		} else if choice(c) == straight {
-			newPos = position{
+			newPos = Position{
 				x: head.x + 1,
 				y: head.y,
 			}
@@ -152,7 +152,7 @@ func (s *snake) newHeadPos(m Move) position {
 	return newPos
 }
 
-func (s *snake) moveTo(p position, food bool) {
+func (s *snake) moveTo(p Position, food bool) {
 	s.position = append(s.position, p)
 	if !food {
 		s.position = s.position[1:]

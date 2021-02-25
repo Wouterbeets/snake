@@ -18,7 +18,7 @@ func TestNewSnake(t *testing.T) {
 }
 
 func TestSnakeHead(t *testing.T) {
-	s := snake{position: []position{
+	s := snake{position: []Position{
 		{
 			x: 5,
 			y: 5,
@@ -28,11 +28,11 @@ func TestSnakeHead(t *testing.T) {
 			y: 5,
 		},
 	}}
-	require.Equal(t, position{x: 6, y: 5}, s.head())
+	require.Equal(t, Position{x: 6, y: 5}, s.head())
 }
 
 func TestSnake(t *testing.T) {
-	s := snake{position: []position{
+	s := snake{position: []Position{
 		{
 			x: 5,
 			y: 5,
@@ -42,28 +42,28 @@ func TestSnake(t *testing.T) {
 			y: 5,
 		},
 	}}
-	require.Equal(t, position{x: 5, y: 5}, s.body())
-	require.Equal(t, position{x: 5, y: 5}, s.tail())
+	require.Equal(t, Position{x: 5, y: 5}, s.body())
+	require.Equal(t, Position{x: 5, y: 5}, s.tail())
 	require.Equal(t, east, s.getDir())
 
 	m := Move{move: []float64{0, 1, 0}, ID: ID(7)}
-	require.Equal(t, position{x: 7, y: 5}, s.newHeadPos(m))
+	require.Equal(t, Position{x: 7, y: 5}, s.newHeadPos(m))
 
 	m = Move{move: []float64{1, 0, 0}, ID: ID(7)}
-	require.Equal(t, position{x: 6, y: 4}, s.newHeadPos(m))
+	require.Equal(t, Position{x: 6, y: 4}, s.newHeadPos(m))
 
 	m = Move{move: []float64{0, 0, 1}, ID: ID(7)}
-	require.Equal(t, position{x: 6, y: 6}, s.newHeadPos(m))
+	require.Equal(t, Position{x: 6, y: 6}, s.newHeadPos(m))
 
 	m = Move{move: []float64{0, 1, 0}, ID: ID(7)}
 	s.moveTo(s.newHeadPos(m), false)
-	require.Equal(t, position{x: 7, y: 5}, s.head())
-	require.Equal(t, position{x: 6, y: 5}, s.body())
-	require.Equal(t, position{x: 6, y: 5}, s.tail())
+	require.Equal(t, Position{x: 7, y: 5}, s.head())
+	require.Equal(t, Position{x: 6, y: 5}, s.body())
+	require.Equal(t, Position{x: 6, y: 5}, s.tail())
 
 	m = Move{move: []float64{1, 0, 0}, ID: ID(7)}
 	s.moveTo(s.newHeadPos(m), false)
-	require.Equal(t, position{x: 7, y: 4}, s.head())
-	require.Equal(t, position{x: 7, y: 5}, s.body())
-	require.Equal(t, position{x: 7, y: 5}, s.tail())
+	require.Equal(t, Position{x: 7, y: 4}, s.head())
+	require.Equal(t, Position{x: 7, y: 5}, s.body())
+	require.Equal(t, Position{x: 7, y: 5}, s.tail())
 }
