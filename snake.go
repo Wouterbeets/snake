@@ -74,7 +74,7 @@ func (s *snake) getDir() direction {
 	return west
 }
 
-func (s *snake) newHeadPos(m move) position {
+func (s *snake) newHeadPos(m Move) position {
 	dir := s.getDir()
 	head := s.head()
 	c := m.getChoice()

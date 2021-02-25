@@ -76,7 +76,7 @@ func NewGame(height, width int, players []Player) (*Game, error) {
 
 // PlayRound processes one game tick
 func (g *Game) PlayRound() (gameOver bool, state Board) {
-	cmove := make(chan move, len(g.Players))
+	cmove := make(chan Move, len(g.Players))
 
 	var wg sync.WaitGroup
 
@@ -84,7 +84,8 @@ func (g *Game) PlayRound() (gameOver bool, state Board) {
 		wg.Add(1)
 		go func(p Player) {
 			defer wg.Done()
-			cmove <- p.Play(g)
+			m := p.Play(g)
+			cmove <- m
 		}(g.Players[i])
 	}
 	wg.Wait()
@@ -123,11 +124,10 @@ func (g *Game) newFood() {
 	}
 }
 
-// PlayMove takes a move and aplies is to the game
-func (g *Game) PlayMove(m move) (dead bool) {
+// PlayMove takes a move and aplies it to the game
+func (g *Game) PlayMove(m Move) (dead bool) {
 	s := g.Players[m.ID].snake
 	newPos := s.newHeadPos(m)
-	g.print()
 
 	if g.Board[newPos.y][newPos.x] == food {
 		s.moveTo(newPos, true)

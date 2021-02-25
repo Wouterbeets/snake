@@ -5,8 +5,8 @@ import (
 	"time"
 )
 
-type move struct {
-	move []float64
+type Move struct {
+	Move []float64
 	ID   ID
 }
 
@@ -18,22 +18,22 @@ const (
 	straight choice = "straight"
 )
 
-func (m move) getChoice() choice {
-	if len(m.move) != 3 {
+func (m Move) getChoice() choice {
+	if len(m.Move) != 3 {
 		return straight
 	}
-	if m.move[0] > m.move[1] && m.move[0] > m.move[2] {
+	if m.Move[0] > m.Move[1] && m.Move[0] > m.Move[2] {
 		return left
-	} else if m.move[1] > m.move[2] && m.move[1] > m.move[0] {
+	} else if m.Move[1] > m.Move[2] && m.Move[1] > m.Move[0] {
 		return straight
-	} else if m.move[2] > m.move[0] && m.move[2] > m.move[1] {
+	} else if m.Move[2] > m.Move[0] && m.Move[2] > m.Move[1] {
 		return right
 	}
 	return straight
 }
 
 type Player interface {
-	Play(*Game) move
+	Play(*Game) Move
 	SetID(ID)
 }
 
@@ -43,7 +43,7 @@ type Human struct {
 	Framerate time.Duration
 }
 
-func (h *Human) Play(gameState *Game) move {
+func (h *Human) Play(gameState *Game) Move {
 	var key rune
 	select {
 	case key = <-h.Input:
@@ -52,13 +52,13 @@ func (h *Human) Play(gameState *Game) move {
 	}
 	switch key {
 	case 'a':
-		return move{move: []float64{1, 0, 0}, ID: h.ID}
+		return Move{Move: []float64{1, 0, 0}, ID: h.ID}
 	case 'w':
-		return move{move: []float64{0, 1, 0}, ID: h.ID}
+		return Move{Move: []float64{0, 1, 0}, ID: h.ID}
 	case 'd':
-		return move{move: []float64{0, 0, 1}, ID: h.ID}
+		return Move{Move: []float64{0, 0, 1}, ID: h.ID}
 	default:
-		return move{move: []float64{0, 1, 0}, ID: h.ID}
+		return Move{Move: []float64{0, 1, 0}, ID: h.ID}
 	}
 }
 
@@ -70,8 +70,8 @@ type Random struct {
 	ID ID
 }
 
-func (r *Random) Play(gameState *Game) move {
-	return move{move: []float64{rand.Float64(), rand.Float64(), rand.Float64()}, ID: r.ID}
+func (r *Random) Play(gameState *Game) Move {
+	return Move{Move: []float64{rand.Float64(), rand.Float64(), rand.Float64()}, ID: r.ID}
 }
 
 func (r *Random) SetID(id ID) {
