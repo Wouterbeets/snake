@@ -39,15 +39,6 @@ func main() {
 		src,                  // Lastly, consult the configuration file
 	})}
 
-	// Create a sample file if performing multiple runs
-	var s *efficacy.Sampler
-	if *runs > 1 {
-		if s, err = efficacy.NewSampler(*epath); err != nil {
-			log.Fatalf("%+v\n", err)
-		}
-		defer s.Close()
-	}
-
 	var best evo.Genome
 	f := func(pop evo.Population) error {
 
@@ -60,6 +51,15 @@ func main() {
 		// Output the best
 		best = genomes[len(genomes)-1]
 		return nil
+	}
+
+	// Create a sample file if performing multiple runs
+	var s *efficacy.Sampler
+	if *runs > 1 {
+		if s, err = efficacy.NewSampler(*epath); err != nil {
+			log.Fatalf("%+v\n", err)
+		}
+		defer s.Close()
 	}
 
 	exp := neat.NewExperiment(cfg)
@@ -86,7 +86,7 @@ func main() {
 			log.Fatalf("%+v\n", err)
 		}
 	}
-	fmt.Println(best)
+	fmt.Printf("best: %+v\n ", best)
 	net, err := exp.Translate(best.Decoded)
 	e := Evaluator{}
 	r, err := e.EvaluateNet(net)
@@ -95,30 +95,42 @@ func main() {
 	}
 	fmt.Println(r)
 
-	framerate := 50 * time.Millisecond
+	debug = true
+	framerate := 20 * time.Millisecond
 	sc := term.Screen{Input: make(chan [][]rune), UserInput: make(chan rune)}
-	players := []snake.Player{&snake.Human{Input: sc.UserInput, Framerate: framerate},
+	players := []snake.Player{
+		&snake.Human{Input: sc.UserInput, Framerate: framerate},
 		&NetWrapper{Ai: net},
 		&snake.Random{},
 		&snake.Random{},
 		&snake.Random{},
 		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
 	}
-	g, err := snake.NewGame(20, 20, players)
+	g, err := snake.NewGame(40, 40, players)
 	if err != nil {
 		panic(err)
 	}
 	go sc.Run(framerate)
 
 	runes := map[int8]rune{
-		0: ' ',
-		1: '█',
-		2: 'M',
+		-1: 'M',
+		0:  ' ',
+		1:  '█',
+		2:  '█',
 	}
 	for i := range players {
 		runes[int8(i)+3] = '█'
 	}
-	for {
+	for i := 0; i < 300; i++ {
 		gameOver, state := g.PlayRound()
 		sc.Input <- stateToRune(state, runes)
 		if gameOver {
@@ -146,6 +158,25 @@ type Evaluator struct {
 }
 
 func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
+	//player := NetWrapper{Ai: p.Network}
+	////g, err := snake.NewGame(20, 20, []snake.Player{
+	//&player,
+	//&snake.Random{},
+	//&snake.Random{},
+	//&snake.Random{},
+	//})
+	//
+	//rounds := 100
+	////var snakeLen int
+	//for i := 0; i < rounds; i++ {
+	////snakeLen = g.PlayerLen(player.ID)
+	//gameOver, _ := g.PlayRound()
+	//if gameOver || !g.Alive(player.ID) {
+	//r.Fitness = float64(i) / float64(rounds)
+	//break
+	//}
+	//}
+
 	type eval struct {
 		in *mat.Dense
 	}
@@ -183,8 +214,6 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 		},
 	}
 
-	r.ID = p.ID
-
 	for e := range evals {
 		m, err := p.Activate(evals[e].in)
 
@@ -198,7 +227,8 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 			}
 		}
 	}
-	r.Solved = r.Fitness > float64(len(evals))*3.0
+	//r.Fitness = r.Fitness + float64(snakeLen)
+	fmt.Println("f:", r.Fitness)
 	return r, err
 }
 
@@ -264,9 +294,10 @@ type NetWrapper struct {
 	ID snake.ID
 }
 
+var debug bool
+
 func (n *NetWrapper) Play(g *snake.Game) snake.Move {
 	vis := g.Vision(n.ID)
-	fmt.Println("vis", vis)
 	in := mat.NewDense(1, 3, []float64{float64(vis[0]), float64(vis[1]), float64(vis[2])})
 	out, err := n.Ai.Activate(in)
 	if err != nil {
@@ -274,7 +305,12 @@ func (n *NetWrapper) Play(g *snake.Game) snake.Move {
 		//		return snake.Move{Move: []float64{0, 0, 0}, ID: n.ID}
 	}
 	ret := []float64{out.At(0, 0), out.At(0, 1), out.At(0, 2)}
-	fmt.Println("ai response:", ret)
+	if debug {
+		for i := range ret {
+			fmt.Printf("%d -> %.2f\n", vis[i], ret[i])
+		}
+		fmt.Println("")
+	}
 	return snake.Move{Move: ret, ID: n.ID}
 }
 

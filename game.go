@@ -9,7 +9,7 @@ import (
 const (
 	empty = iota
 	wall
-	food
+	food = -1
 )
 
 // ID is the player's id on the board
@@ -71,7 +71,27 @@ func NewGame(height, width int, players []Player) (*Game, error) {
 	}
 
 	g.newFood()
+	g.newFood()
+	g.newFood()
+	g.newFood()
+	g.newFood()
+	g.newFood()
+	g.newFood()
+	g.newFood()
+	g.newFood()
+	g.newFood()
 	return g, nil
+}
+
+func (g *Game) PlayerLen(id ID) int {
+	return len(g.Players[id].snake.position)
+}
+
+func (g *Game) Alive(id ID) bool {
+	if _, ok := g.Players[id]; !ok {
+		return false
+	}
+	return true
 }
 
 // PlayRound processes one game tick
