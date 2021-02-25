@@ -56,6 +56,9 @@ func main() {
 
 		// Sort so the best genome is at the end
 		evo.SortBy(genomes, evo.BySolved, evo.ByFitness, evo.ByComplexity, evo.ByAge)
+		for i := range genomes {
+			fmt.Printf("%+v\n", genomes[i])
+		}
 
 		// Output the best
 		best = genomes[len(genomes)-1]
