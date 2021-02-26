@@ -133,7 +133,7 @@ func main() {
 	for i := range players {
 		runes[int8(i)+3] = '█'
 	}
-	for i := 0; i < 300; i++ {
+	for i := 0; i < 100; i++ {
 		gameOver, state := g.PlayRound()
 		sc.Input <- stateToRune(state, runes)
 		if gameOver {
@@ -162,6 +162,7 @@ type Evaluator struct {
 
 func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 
+	r.ID = p.ID
 	type eval struct {
 		in *mat.Dense
 	}
@@ -212,7 +213,7 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 			}
 		}
 	}
-	if r.Fitness < 17.0 {
+	if r.Fitness < 17.9 {
 		return r, err
 	}
 	player := NetWrapper{Ai: p.Network}
@@ -223,10 +224,10 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 		&snake.Random{},
 	})
 
-	rounds := 100
+	rounds := 30
 	var snakeLen int
 	for i := 0; i < rounds; i++ {
-		//snakeLen = g.PlayerLen(player.ID)
+		snakeLen = g.PlayerLen(player.ID)
 		gameOver, _ := g.PlayRound()
 		if gameOver || !g.Alive(player.ID) {
 			r.Fitness = float64(i) / float64(rounds)
@@ -234,7 +235,6 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 		}
 	}
 	r.Fitness += float64(snakeLen)
-	fmt.Printf("id: %d, fit: %.2f\n", p.ID, r.Fitness)
 	return r, err
 }
 
