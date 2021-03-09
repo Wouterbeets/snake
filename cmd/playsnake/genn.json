@@ -2,7 +2,7 @@
 	"disable-sort-check": true,
 	"neat": {
 		"comparison":                    "fitness",
-		"num-inputs":                    3,
+		"num-inputs":                    27,
 		"num-outputs":                   3,
 		"hidden-activation":             "steepened-sigmoid",
 		"output-activation":             "steepened-sigmoid",

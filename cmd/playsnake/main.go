@@ -2,9 +2,12 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"flag"
 	"fmt"
+	"io/ioutil"
 	"log"
+	"os"
 	"time"
 
 	"github.com/klokare/evo"
@@ -20,10 +23,12 @@ import (
 func main() {
 
 	var (
-		runs  = flag.Int("runs", 1, "number of experiments to run")
-		iter  = flag.Int("iterations", 100, "number of iterations for experiment")
-		cpath = flag.String("config", "genn.json", "path to the configuration file")
-		epath = flag.String("efficacy", "xor-samples.txt", "path for efficacy sample file")
+		runs   = flag.Int("runs", 1, "number of experiments to run")
+		iter   = flag.Int("iterations", 100, "number of iterations for experiment")
+		cpath  = flag.String("config", "genn.json", "path to the configuration file")
+		epath  = flag.String("efficacy", "xor-samples.txt", "path for efficacy sample file")
+		aiOut  = flag.String("aiout", "ai.json", "path for ai")
+		loadAi = flag.String("loadai", "", "ai in file")
 	)
 	flag.Parse()
 
@@ -64,52 +69,68 @@ func main() {
 		defer s.Close()
 	}
 
+	var netJson []byte
+
 	exp := neat.NewExperiment(cfg)
-	for r := 0; r < *runs; r++ {
-		if s == nil {
-			exp.AddSubscription(evo.Subscription{Event: evo.Completed, Callback: f}) // Show summary upon completion
-		} else {
-			c0, c1 := s.Callbacks(r)
-			exp.AddSubscription(evo.Subscription{Event: evo.Started, Callback: c0})   // Begin the efficacy sample
-			exp.AddSubscription(evo.Subscription{Event: evo.Completed, Callback: c1}) // End the efficacy sample
+	if *loadAi == "" {
+		for r := 0; r < *runs; r++ {
+			if s == nil {
+				exp.AddSubscription(evo.Subscription{Event: evo.Completed, Callback: f}) // Show summary upon completion
+			} else {
+				c0, c1 := s.Callbacks(r)
+				exp.AddSubscription(evo.Subscription{Event: evo.Started, Callback: c0})   // Begin the efficacy sample
+				exp.AddSubscription(evo.Subscription{Event: evo.Completed, Callback: c1}) // End the efficacy sample
+			}
+
+			// Run the experiment for a set number of iterations
+			ctx, fn, cb := evo.WithIterations(context.Background(), *iter)
+			defer fn() // ensure the context cancels
+			exp.AddSubscription(evo.Subscription{Event: evo.Evaluated, Callback: cb})
+
+			// Stop the experiment if there is a solution
+			ctx, fn, cb = evo.WithSolution(ctx)
+			defer fn() // ensure the context cancels
+			exp.AddSubscription(evo.Subscription{Event: evo.Evaluated, Callback: cb})
+			// Execute the experiment
+			if _, err = evo.Run(ctx, exp, ai.Evaluator{}); err != nil {
+				log.Fatalf("%+v\n", err)
+			}
+		}
+		netJson, err = json.MarshalIndent(best.Decoded, "", "\t")
+		file, err := os.Create(*aiOut)
+		if err != nil {
+			panic(err.Error())
+		}
+		fmt.Fprintf(file, string(netJson))
+		file.Close()
+	} else {
+		aiFromFile, err := os.Open(*loadAi)
+		if err != nil {
+			panic(err.Error())
+		}
+		netJson, err = ioutil.ReadAll(aiFromFile)
+		if err != nil {
+			panic(err.Error())
 		}
 
-		// Run the experiment for a set number of iterations
-		ctx, fn, cb := evo.WithIterations(context.Background(), *iter)
-		defer fn() // ensure the context cancels
-		exp.AddSubscription(evo.Subscription{Event: evo.Evaluated, Callback: cb})
-
-		// Stop the experiment if there is a solution
-		ctx, fn, cb = evo.WithSolution(ctx)
-		defer fn() // ensure the context cancels
-		exp.AddSubscription(evo.Subscription{Event: evo.Evaluated, Callback: cb})
-		// Execute the experiment
-		if _, err = evo.Run(ctx, exp, ai.Evaluator{}); err != nil {
-			log.Fatalf("%+v\n", err)
-		}
 	}
-	fmt.Printf("best: %+v\n ", best)
-	net, err := exp.Translate(best.Decoded)
-	e := ai.Evaluator{}
-	r, err := e.EvaluateNet(net)
+
+	var sub evo.Substrate
+	err = json.Unmarshal(netJson, &sub)
 	if err != nil {
 		panic(err.Error())
 	}
-	fmt.Println(r)
 
-	framerate := 20 * time.Millisecond
+	net, err := exp.Translate(sub)
+	if err != nil {
+		panic(err.Error())
+	}
+
+	framerate := 200 * time.Millisecond
 	sc := term.Screen{Input: make(chan [][]rune), UserInput: make(chan rune)}
 	players := []snake.Player{
 		&snake.Human{Input: sc.UserInput, Framerate: framerate},
 		&ai.NetWrapper{Ai: net},
-		&ai.NetWrapper{Ai: net},
-		&ai.NetWrapper{Ai: net},
-		&ai.NetWrapper{Ai: net},
-		&ai.NetWrapper{Ai: net},
-		&ai.NetWrapper{Ai: net},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
 	}
 	g, err := snake.NewGame(20, 20, players)
 	if err != nil {

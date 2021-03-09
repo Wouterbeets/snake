@@ -24,6 +24,22 @@ type Game struct {
 // Board holds the game state
 type Board [][]int8
 
+func (b Board) At(y, x int) int8 {
+	if y >= len(b) {
+		return wall
+	}
+	if y < 0 {
+		return wall
+	}
+	if x >= len(b[y]) {
+		return wall
+	}
+	if x < 0 {
+		return wall
+	}
+	return b[y][x]
+}
+
 type Position struct {
 	x int
 	y int
@@ -32,6 +48,7 @@ type Position struct {
 type playerInfo struct {
 	Player
 	*snake
+	life float64
 }
 
 func newBoard(height, width int) Board {
@@ -67,6 +84,7 @@ func NewGame(height, width int, players []Player) (*Game, error) {
 		g.Players[ID(i+3)] = playerInfo{
 			Player: p,
 			snake:  newSnake(board, ID(i+3)),
+			life:   1,
 		}
 	}
 
@@ -150,24 +168,120 @@ func (g *Game) Vision(id ID) []int8 {
 	var vis []int8
 	switch s.getDir() {
 	case north:
-		vis = append(vis, g.Board[pos.y][pos.x-1])
-		vis = append(vis, g.Board[pos.y-1][pos.x])
-		vis = append(vis, g.Board[pos.y][pos.x+1])
+		vis = append(vis, g.Board.At(pos.y, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y, pos.x+3))
 		return vis
 	case east:
-		vis = append(vis, g.Board[pos.y-1][pos.x])
-		vis = append(vis, g.Board[pos.y][pos.x+1])
-		vis = append(vis, g.Board[pos.y+1][pos.x])
+		vis = append(vis, g.Board.At(pos.y-1, pos.x))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x))
 		return vis
 	case south:
-		vis = append(vis, g.Board[pos.y][pos.x+1])
-		vis = append(vis, g.Board[pos.y+1][pos.x])
-		vis = append(vis, g.Board[pos.y][pos.x-1])
+		vis = append(vis, g.Board.At(pos.y, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x-3))
+		vis = append(vis, g.Board.At(pos.y, pos.x-3))
 		return vis
 	case west:
-		vis = append(vis, g.Board[pos.y+1][pos.x])
-		vis = append(vis, g.Board[pos.y][pos.x-1])
-		vis = append(vis, g.Board[pos.y-1][pos.x])
+		vis = append(vis, g.Board.At(pos.y+1, pos.x))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x-2))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x-1))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y+2, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y+1, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y+3, pos.x))
+		vis = append(vis, g.Board.At(pos.y-1, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y-2, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x+3))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x+2))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x+1))
+		vis = append(vis, g.Board.At(pos.y-3, pos.x))
 		return vis
 	default:
 		return vis
@@ -181,6 +295,7 @@ func (g *Game) PlayMove(m Move) (dead bool) {
 
 	if g.Board[newPos.y][newPos.x] == food {
 		s.moveTo(newPos, true)
+		g.restoreLife(m.ID)
 		g.newFood()
 		return false
 	}
@@ -192,5 +307,21 @@ func (g *Game) PlayMove(m Move) (dead bool) {
 	s.moveTo(newPos, false)
 	g.Board[newPos.y][newPos.x] = int8(m.ID)
 	g.Board[t.y][t.x] = empty
+	return g.reduceLife(m.ID)
+}
+
+func (g *Game) reduceLife(id ID) (dead bool) {
+	p := g.Players[id]
+	p.life -= 0.02
+	g.Players[id] = p
+	if p.life <= 0 {
+		return true
+	}
 	return false
+}
+
+func (g *Game) restoreLife(id ID) {
+	p := g.Players[id]
+	p.life = 1
+	g.Players[id] = p
 }
