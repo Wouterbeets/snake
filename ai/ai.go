@@ -46,60 +46,40 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 
 	evals := []eval{
 		{
-			in: mat.NewDense(1, 27, []float64{
-				0, 0, 0, 0, 0,
-				0, 0, 0, 0, 0, 0, 0, 0, 0,
-				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			in: mat.NewDense(1, 10, []float64{
+				0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 			}),
-			out: mat.NewDense(1, 3, []float64{1, 1, 1}),
+			out: mat.NewDense(1, 3, []float64{0, 0, 0}),
 		},
 		{
-			in: mat.NewDense(1, 27, []float64{
-				0, 0, 1, 0, 0,
-				0, 0, 0, 1, 1, 1, 0, 0, 0,
-				0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+			in: mat.NewDense(1, 10, []float64{
+				0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
 			}),
 			out: mat.NewDense(1, 3, []float64{1, 0, 1}),
 		},
 		{
-			in: mat.NewDense(1, 27, []float64{
-				1, 1, 0, 1, 1,
-				1, 1, 1, 0, 0, 0, 1, 1, 1,
-				1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1,
-			}),
-			out: mat.NewDense(1, 3, []float64{0, 1, 0}),
-		},
-		{
-			in: mat.NewDense(1, 27, []float64{
-				0, 1, 1, 1, 1,
-				0, 1, 1, 1, 1, 1, 1, 1, 1,
-				0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-			}),
-			out: mat.NewDense(1, 3, []float64{1, 0, 0}),
-		},
-		{
-			in: mat.NewDense(1, 27, []float64{
-				1, 1, 1, 1, 0,
-				1, 1, 1, 1, 1, 1, 1, 1, 0,
-				1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0,
-			}),
-			out: mat.NewDense(1, 3, []float64{0, 0, 1}),
-		},
-		{
-			in: mat.NewDense(1, 27, []float64{
-				1, 0, 0, 0, 0,
-				1, 1, 0, 0, 0, 0, 0, 0, 0,
-				1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			in: mat.NewDense(1, 10, []float64{
+				0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
 			}),
 			out: mat.NewDense(1, 3, []float64{0, 1, 1}),
 		},
 		{
-			in: mat.NewDense(1, 27, []float64{
-				0, 0, 0, 0, 1,
-				0, 0, 0, 0, 0, 0, 0, 1, 1,
-				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
+			in: mat.NewDense(1, 10, []float64{
+				0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
 			}),
 			out: mat.NewDense(1, 3, []float64{1, 1, 0}),
+		},
+		{
+			in: mat.NewDense(1, 10, []float64{
+				0, 0, 0, 0, 1, 1, 0, 0, 0, 0,
+			}),
+			out: mat.NewDense(1, 3, []float64{1, 0, 0}),
+		},
+		{
+			in: mat.NewDense(1, 10, []float64{
+				0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
+			}),
+			out: mat.NewDense(1, 3, []float64{0, 0, 1}),
 		},
 	}
 
@@ -117,15 +97,12 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 		}
 	}
 	fmt.Println(r.Fitness)
-	if r.Fitness < 20.9 {
-		return r, err
+	if r.Fitness < 17.9 {
+		return r, nil
 	}
 	player := NetWrapper{Ai: p.Network}
 	g, err := snake.NewGame(20, 20, []snake.Player{
 		&player,
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
 		&snake.Random{},
 		&snake.Random{},
 		&snake.Random{},
@@ -142,7 +119,7 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 		}
 	}
 	r.Fitness += float64(snakeLen)
-	return r, err
+	return r, nil
 }
 
 type Evaluator struct {
