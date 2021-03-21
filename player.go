@@ -32,18 +32,13 @@ func (m Move) getChoice() choice {
 	return straight
 }
 
-type Player interface {
-	Play(*Game) Move
-	SetID(ID)
-}
-
 type Human struct {
 	ID        ID
 	Input     chan rune
 	Framerate time.Duration
 }
 
-func (h *Human) Play(gameState *Game) Move {
+func (h *Human) Play(gameState GameState) Move {
 	var key rune
 	select {
 	case key = <-h.Input:
@@ -70,8 +65,21 @@ type Random struct {
 	ID ID
 }
 
-func (r *Random) Play(gameState *Game) Move {
-	return Move{Move: []float64{rand.Float64(), rand.Float64(), rand.Float64()}, ID: r.ID}
+func (r *Random) Play(gameState GameState) Move {
+	v := gameState.Vision(r.ID)
+	left := rand.Float64()
+	straight := rand.Float64()
+	right := rand.Float64()
+	if v[4] >= wall {
+		left = 0
+	}
+	if v[5] >= wall {
+		straight = 0
+	}
+	if v[6] >= wall {
+		right = 0
+	}
+	return Move{Move: []float64{left, straight, right}, ID: r.ID}
 }
 
 func (r *Random) SetID(id ID) {

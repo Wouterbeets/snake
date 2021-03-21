@@ -20,7 +20,7 @@ func newSnake(board Board, id ID) *snake {
 		pos := randomPos(len(board[0]), len(board))
 		x := pos.x
 		y := pos.y
-		if board[y][x] == empty && board[y][x+1] == empty && x > 1 {
+		if board[y][x] == empty && board[y][x+1] == empty {
 			board[y][x] = int8(id)
 			board[y][x+1] = int8(id)
 			s.position[0].x, s.position[0].y = x, y
@@ -39,6 +39,14 @@ const (
 	east  direction = "east"
 )
 
+func (s *snake) reduceSize() bool {
+	if len(s.position) <= 2 {
+		return true
+	}
+	s.position = s.position[1:]
+	return false
+}
+
 func (s *snake) tail() Position {
 	return s.position[0]
 }
@@ -54,7 +62,7 @@ func (s *snake) body() Position {
 	if s == nil || len(s.position) == 0 {
 		return Position{0, 0}
 	}
-	if len(s.position) == 0 {
+	if len(s.position) < 2 {
 		return Position{0, 0}
 	}
 	return s.position[len(s.position)-2]

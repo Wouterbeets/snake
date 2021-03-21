@@ -17,12 +17,24 @@ type ID int8
 
 // Game holds the board and the players
 type Game struct {
-	Board   Board
+	board   Board
 	Players map[ID]playerInfo
 }
 
-// Board holds the game state
+// The Board holds the game state
 type Board [][]int8
+
+// The Player is the inteface called by the game get a move from the player
+type Player interface {
+	Play(GameState) Move
+	SetID(ID)
+}
+
+type GameState interface {
+	Vision(id ID) []int8
+	Life(id ID) float64 // 0 is dead
+	Board() Board
+}
 
 func (b Board) At(y, x int) int8 {
 	if y >= len(b) {
@@ -38,17 +50,6 @@ func (b Board) At(y, x int) int8 {
 		return wall
 	}
 	return b[y][x]
-}
-
-type Position struct {
-	x int
-	y int
-}
-
-type playerInfo struct {
-	Player
-	*snake
-	life float64
 }
 
 func newBoard(height, width int) Board {
@@ -67,38 +68,42 @@ func newBoard(height, width int) Board {
 }
 
 // NewGame inits a new snake game with a size and list of players
-func NewGame(height, width int, players []Player) (*Game, error) {
+func NewGame(height, width int, players []Player, nbFoodOnMap int) (*Game, error) {
 	if height < 5 || width < 5 {
 		return nil, errors.New("size too small")
 	}
 
-	board := newBoard(height, width)
-
 	g := &Game{
-		Board:   board,
+		board:   newBoard(height, width),
 		Players: make(map[ID]playerInfo, len(players)),
 	}
 
+	// Init players
 	for i, p := range players {
-		p.SetID(ID(i + 3))
-		g.Players[ID(i+3)] = playerInfo{
+		p.SetID(ID(i + 2))
+		g.Players[ID(i+2)] = playerInfo{
 			Player: p,
-			snake:  newSnake(board, ID(i+3)),
+			snake:  newSnake(g.board, ID(i+2)),
 			life:   1,
 		}
 	}
 
-	g.newFood()
-	g.newFood()
-	g.newFood()
-	g.newFood()
-	g.newFood()
-	g.newFood()
-	g.newFood()
-	g.newFood()
-	g.newFood()
-	g.newFood()
+	// Generate food
+	for i := 0; i <= nbFoodOnMap; i++ {
+		g.newFood()
+	}
 	return g, nil
+}
+
+type Position struct {
+	x int
+	y int
+}
+
+type playerInfo struct {
+	Player
+	*snake
+	life float64
 }
 
 func (g *Game) PlayerLen(id ID) int {
@@ -110,6 +115,19 @@ func (g *Game) Alive(id ID) bool {
 		return false
 	}
 	return true
+}
+
+// Board returns a copy of the board
+func (g *Game) Board() (b Board) {
+	copy(b, g.board)
+	for i := range g.board {
+		copy(b[i], g.board[i])
+	}
+	return
+}
+
+func (g *Game) Life(id ID) float64 {
+	return g.Players[id].life * float64(g.PlayerLen(id))
 }
 
 // PlayRound processes one game tick
@@ -135,7 +153,7 @@ func (g *Game) PlayRound() (gameOver bool, state Board) {
 		}
 		if dead := g.PlayMove(move); dead {
 			for _, pos := range g.Players[move.ID].position {
-				g.Board[pos.y][pos.x] = empty
+				g.board[pos.y][pos.x] = empty
 			}
 			delete(g.Players, move.ID)
 			if len(g.Players) == 0 {
@@ -143,20 +161,20 @@ func (g *Game) PlayRound() (gameOver bool, state Board) {
 			}
 		}
 	}
-	return false, g.Board
+	return false, g.board
 }
 
 func (g *Game) print() {
-	for _, r := range g.Board {
+	for _, r := range g.board {
 		fmt.Println(r)
 	}
 }
 
 func (g *Game) newFood() {
 	for {
-		pos := randomPos(len(g.Board[0]), len(g.Board))
-		if g.Board[pos.y][pos.x] == empty {
-			g.Board[pos.y][pos.x] = food
+		pos := randomPos(len(g.board[0]), len(g.board))
+		if g.board[pos.y][pos.x] == empty {
+			g.board[pos.y][pos.x] = food
 			return
 		}
 	}
@@ -168,37 +186,37 @@ func (g *Game) SecondLayerVision(id ID) []int8 {
 	var vis []int8
 	switch s.getDir() {
 	case north:
-		vis = append(vis, g.Board.At(pos.y+1, pos.x-1))
-		vis = append(vis, g.Board.At(pos.y, pos.x-2))
-		vis = append(vis, g.Board.At(pos.y-1, pos.x-1))
-		vis = append(vis, g.Board.At(pos.y-2, pos.x))
-		vis = append(vis, g.Board.At(pos.y-1, pos.x+1))
-		vis = append(vis, g.Board.At(pos.y, pos.x+2))
-		vis = append(vis, g.Board.At(pos.y+1, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+1, pos.x-1))
+		vis = append(vis, g.board.At(pos.y, pos.x-2))
+		vis = append(vis, g.board.At(pos.y-1, pos.x-1))
+		vis = append(vis, g.board.At(pos.y-2, pos.x))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+1, pos.x+2))
 	case east:
-		vis = append(vis, g.Board.At(pos.y-1, pos.x-1))
-		vis = append(vis, g.Board.At(pos.y-2, pos.x))
-		vis = append(vis, g.Board.At(pos.y-1, pos.x+1))
-		vis = append(vis, g.Board.At(pos.y, pos.x+2))
-		vis = append(vis, g.Board.At(pos.y+1, pos.x+1))
-		vis = append(vis, g.Board.At(pos.y+2, pos.x))
-		vis = append(vis, g.Board.At(pos.y+1, pos.x-1))
+		vis = append(vis, g.board.At(pos.y-1, pos.x-1))
+		vis = append(vis, g.board.At(pos.y-2, pos.x))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+2, pos.x))
+		vis = append(vis, g.board.At(pos.y+1, pos.x-1))
 	case south:
-		vis = append(vis, g.Board.At(pos.y-1, pos.x+1))
-		vis = append(vis, g.Board.At(pos.y, pos.x+2))
-		vis = append(vis, g.Board.At(pos.y+1, pos.x+1))
-		vis = append(vis, g.Board.At(pos.y+2, pos.x))
-		vis = append(vis, g.Board.At(pos.y+1, pos.x-1))
-		vis = append(vis, g.Board.At(pos.y, pos.x-2))
-		vis = append(vis, g.Board.At(pos.y-1, pos.x-2))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+2, pos.x))
+		vis = append(vis, g.board.At(pos.y+1, pos.x-1))
+		vis = append(vis, g.board.At(pos.y, pos.x-2))
+		vis = append(vis, g.board.At(pos.y-1, pos.x-2))
 	case west:
-		vis = append(vis, g.Board.At(pos.y+1, pos.x+1))
-		vis = append(vis, g.Board.At(pos.y+2, pos.x))
-		vis = append(vis, g.Board.At(pos.y+1, pos.x-1))
-		vis = append(vis, g.Board.At(pos.y, pos.x-2))
-		vis = append(vis, g.Board.At(pos.y-1, pos.x-1))
-		vis = append(vis, g.Board.At(pos.y-2, pos.x))
-		vis = append(vis, g.Board.At(pos.y-1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+2, pos.x))
+		vis = append(vis, g.board.At(pos.y+1, pos.x-1))
+		vis = append(vis, g.board.At(pos.y, pos.x-2))
+		vis = append(vis, g.board.At(pos.y-1, pos.x-1))
+		vis = append(vis, g.board.At(pos.y-2, pos.x))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+1))
 	}
 	return vis
 }
@@ -209,21 +227,21 @@ func (g *Game) PrimordialVision(id ID) []int8 {
 	var vis []int8
 	switch s.getDir() {
 	case north:
-		vis = append(vis, g.Board.At(pos.y, pos.x-1))
-		vis = append(vis, g.Board.At(pos.y-1, pos.x))
-		vis = append(vis, g.Board.At(pos.y, pos.x+1))
+		vis = append(vis, g.board.At(pos.y, pos.x-1))
+		vis = append(vis, g.board.At(pos.y-1, pos.x))
+		vis = append(vis, g.board.At(pos.y, pos.x+1))
 	case east:
-		vis = append(vis, g.Board.At(pos.y-1, pos.x))
-		vis = append(vis, g.Board.At(pos.y, pos.x+1))
-		vis = append(vis, g.Board.At(pos.y+1, pos.x))
+		vis = append(vis, g.board.At(pos.y-1, pos.x))
+		vis = append(vis, g.board.At(pos.y, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+1, pos.x))
 	case south:
-		vis = append(vis, g.Board.At(pos.y, pos.x+1))
-		vis = append(vis, g.Board.At(pos.y+1, pos.x))
-		vis = append(vis, g.Board.At(pos.y, pos.x-1))
+		vis = append(vis, g.board.At(pos.y, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+1, pos.x))
+		vis = append(vis, g.board.At(pos.y, pos.x-1))
 	case west:
-		vis = append(vis, g.Board.At(pos.y+1, pos.x))
-		vis = append(vis, g.Board.At(pos.y, pos.x+1))
-		vis = append(vis, g.Board.At(pos.y-1, pos.x))
+		vis = append(vis, g.board.At(pos.y+1, pos.x))
+		vis = append(vis, g.board.At(pos.y, pos.x+1))
+		vis = append(vis, g.board.At(pos.y-1, pos.x))
 	}
 	return vis
 }
@@ -239,31 +257,36 @@ func (g *Game) PlayMove(m Move) (dead bool) {
 	s := g.Players[m.ID].snake
 	newPos := s.newHeadPos(m)
 
-	if g.Board[newPos.y][newPos.x] == food {
+	if g.board[newPos.y][newPos.x] == food {
 		s.moveTo(newPos, true)
 		g.restoreLife(m.ID)
+		g.board[newPos.y][newPos.x] = int8(m.ID)
 		g.newFood()
 		return false
 	}
 
-	if g.Board[newPos.y][newPos.x] != empty {
+	if g.board[newPos.y][newPos.x] != empty {
 		return true
 	}
 	t := s.tail()
 	s.moveTo(newPos, false)
-	g.Board[newPos.y][newPos.x] = int8(m.ID)
-	g.Board[t.y][t.x] = empty
-	return g.reduceLife(m.ID)
+	g.board[newPos.y][newPos.x] = int8(m.ID)
+	g.board[t.y][t.x] = empty
+	dead = g.reduceLife(m.ID)
+	return
 }
 
 func (g *Game) reduceLife(id ID) (dead bool) {
 	p := g.Players[id]
-	p.life -= 0.02
-	g.Players[id] = p
+	p.life -= 0.01
 	if p.life <= 0 {
-		return true
+		p.life = 1
+		t := p.snake.tail()
+		dead = p.reduceSize()
+		g.board[t.y][t.x] = empty
 	}
-	return false
+	g.Players[id] = p
+	return
 }
 
 func (g *Game) restoreLife(id ID) {

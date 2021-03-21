@@ -2,11 +2,11 @@
 	"disable-sort-check": true,
 	"neat": {
 		"comparison":                    "fitness",
-		"num-inputs":                    10,
+		"num-inputs":                    11,
 		"num-outputs":                   3,
 		"hidden-activation":             "steepened-sigmoid",
 		"output-activation":             "steepened-sigmoid",
-		"population-size":               1500,
+		"population-size":               1000,
 		"weight-power":                  2.5,
 		"max-weight":                    8.0,
 		"bias-power":                    2.5,

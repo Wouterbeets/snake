@@ -131,11 +131,8 @@ func main() {
 	players := []snake.Player{
 		&snake.Human{Input: sc.UserInput, Framerate: framerate},
 		&ai.NetWrapper{Ai: net},
-		&ai.NetWrapper{Ai: net},
-		&ai.NetWrapper{Ai: net},
-		&ai.NetWrapper{Ai: net},
 	}
-	g, err := snake.NewGame(20, 20, players)
+	g, err := snake.NewGame(20, 20, players, 5)
 	if err != nil {
 		panic(err)
 	}

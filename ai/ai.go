@@ -1,23 +1,22 @@
 package ai
 
 import (
-	"fmt"
-	"log"
-	"math"
-
 	"github.com/klokare/evo"
 	"github.com/wouterbeets/snake"
 	"gonum.org/v1/gonum/mat"
 )
 
-func (n *NetWrapper) Play(g *snake.Game) snake.Move {
+func (n *NetWrapper) Play(g snake.GameState) snake.Move {
 	vis := g.Vision(n.ID)
-	fmt.Println(vis)
+	life := g.Life(n.ID)
 	inf := make([]float64, len(vis))
+	inf = append(inf, life)
+
 	for i := range vis {
 		inf[i] = float64(vis[i])
 	}
-	in := mat.NewDense(1, len(vis), inf)
+
+	in := mat.NewDense(1, len(inf), inf)
 	out, err := n.Ai.Activate(in)
 	if err != nil {
 		panic("error in ai")
@@ -44,81 +43,78 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 		out *mat.Dense
 	}
 
-	evals := []eval{
-		{
-			in: mat.NewDense(1, 10, []float64{
-				0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-			}),
-			out: mat.NewDense(1, 3, []float64{0, 0, 0}),
-		},
-		{
-			in: mat.NewDense(1, 10, []float64{
-				0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
-			}),
-			out: mat.NewDense(1, 3, []float64{1, 0, 1}),
-		},
-		{
-			in: mat.NewDense(1, 10, []float64{
-				0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
-			}),
-			out: mat.NewDense(1, 3, []float64{0, 1, 1}),
-		},
-		{
-			in: mat.NewDense(1, 10, []float64{
-				0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
-			}),
-			out: mat.NewDense(1, 3, []float64{1, 1, 0}),
-		},
-		{
-			in: mat.NewDense(1, 10, []float64{
-				0, 0, 0, 0, 1, 1, 0, 0, 0, 0,
-			}),
-			out: mat.NewDense(1, 3, []float64{1, 0, 0}),
-		},
-		{
-			in: mat.NewDense(1, 10, []float64{
-				0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
-			}),
-			out: mat.NewDense(1, 3, []float64{0, 0, 1}),
-		},
-	}
+	//	evals := []eval{
+	//		{
+	//			in: mat.NewDense(1, 11, []float64{
+	//				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+	//			}),
+	//			out: mat.NewDense(1, 3, []float64{0, 0, 0}),
+	//		},
+	//		{
+	//			in: mat.NewDense(1, 11, []float64{
+	//				0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1,
+	//			}),
+	//			out: mat.NewDense(1, 3, []float64{1, 0, 1}),
+	//		},
+	//		{
+	//			in: mat.NewDense(1, 11, []float64{
+	//				0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1,
+	//			}),
+	//			out: mat.NewDense(1, 3, []float64{0, 1, 1}),
+	//		},
+	//		{
+	//			in: mat.NewDense(1, 11, []float64{
+	//				0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1,
+	//			}),
+	//			out: mat.NewDense(1, 3, []float64{1, 1, 0}),
+	//		},
+	//		{
+	//			in: mat.NewDense(1, 11, []float64{
+	//				0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+	//			}),
+	//			out: mat.NewDense(1, 3, []float64{1, 0, 0}),
+	//		},
+	//		{
+	//			in: mat.NewDense(1, 11, []float64{
+	//				0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1,
+	//			}),
+	//			out: mat.NewDense(1, 3, []float64{0, 0, 1}),
+	//		},
+	//	}
 
-	for e := range evals {
-		m, err := p.Activate(evals[e].in)
+	//for e := range evals {
+	//m, err := p.Activate(evals[e].in)
 
-		if err != nil {
-			log.Fatal(err)
-		}
-		row, col := m.Dims()
-		for i := 0; i < row; i++ {
-			for j := 0; j < col; j++ {
-				r.Fitness += 1 - (math.Abs(evals[e].out.At(i, j) - m.At(i, j)))
-			}
-		}
-	}
-	fmt.Println(r.Fitness)
-	if r.Fitness < 17.9 {
-		return r, nil
-	}
+	//if err != nil {
+	//log.Fatal(err)
+	//}
+	//row, col := m.Dims()
+	//for i := 0; i < row; i++ {
+	//for j := 0; j < col; j++ {
+	//r.Fitness += 1 - (math.Abs(evals[e].out.At(i, j) - m.At(i, j)))
+	//}
+	//}
+	//}
+	//if r.Fitness < 17.9 {
+	//return r, nil
+	//}
 	player := NetWrapper{Ai: p.Network}
 	g, err := snake.NewGame(20, 20, []snake.Player{
 		&player,
 		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-	})
+	}, 5)
 
-	rounds := 30
+	rounds := 500
 	var snakeLen int
 	for i := 0; i < rounds; i++ {
 		snakeLen = g.PlayerLen(player.ID)
 		gameOver, _ := g.PlayRound()
 		if gameOver || !g.Alive(player.ID) {
-			r.Fitness = float64(i) / float64(rounds)
+			r.Fitness += float64(i) / float64(rounds)
 			break
 		}
 	}
-	r.Fitness += float64(snakeLen)
+	r.Fitness *= float64(snakeLen)
 	return r, nil
 }
 
