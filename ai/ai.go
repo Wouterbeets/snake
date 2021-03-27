@@ -1,6 +1,8 @@
 package ai
 
 import (
+	"fmt"
+
 	"github.com/klokare/evo"
 	"github.com/wouterbeets/snake"
 	"gonum.org/v1/gonum/mat"
@@ -15,12 +17,10 @@ func (n *NetWrapper) Play(g snake.GameState) snake.Move {
 	for i := range vis {
 		inf[i] = float64(vis[i])
 	}
-
 	in := mat.NewDense(1, len(inf), inf)
 	out, err := n.Ai.Activate(in)
 	if err != nil {
 		panic("error in ai")
-		//		return snake.Move{Move: []float64{0, 0, 0}, ID: n.ID}
 	}
 	ret := []float64{out.At(0, 0), out.At(0, 1), out.At(0, 2)}
 	return snake.Move{Move: ret, ID: n.ID}
@@ -43,70 +43,16 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 		out *mat.Dense
 	}
 
-	//	evals := []eval{
-	//		{
-	//			in: mat.NewDense(1, 11, []float64{
-	//				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-	//			}),
-	//			out: mat.NewDense(1, 3, []float64{0, 0, 0}),
-	//		},
-	//		{
-	//			in: mat.NewDense(1, 11, []float64{
-	//				0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1,
-	//			}),
-	//			out: mat.NewDense(1, 3, []float64{1, 0, 1}),
-	//		},
-	//		{
-	//			in: mat.NewDense(1, 11, []float64{
-	//				0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1,
-	//			}),
-	//			out: mat.NewDense(1, 3, []float64{0, 1, 1}),
-	//		},
-	//		{
-	//			in: mat.NewDense(1, 11, []float64{
-	//				0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1,
-	//			}),
-	//			out: mat.NewDense(1, 3, []float64{1, 1, 0}),
-	//		},
-	//		{
-	//			in: mat.NewDense(1, 11, []float64{
-	//				0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1,
-	//			}),
-	//			out: mat.NewDense(1, 3, []float64{1, 0, 0}),
-	//		},
-	//		{
-	//			in: mat.NewDense(1, 11, []float64{
-	//				0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1,
-	//			}),
-	//			out: mat.NewDense(1, 3, []float64{0, 0, 1}),
-	//		},
-	//	}
-
-	//for e := range evals {
-	//m, err := p.Activate(evals[e].in)
-
-	//if err != nil {
-	//log.Fatal(err)
-	//}
-	//row, col := m.Dims()
-	//for i := 0; i < row; i++ {
-	//for j := 0; j < col; j++ {
-	//r.Fitness += 1 - (math.Abs(evals[e].out.At(i, j) - m.At(i, j)))
-	//}
-	//}
-	//}
-	//if r.Fitness < 17.9 {
-	//return r, nil
-	//}
 	player := NetWrapper{Ai: p.Network}
 	g, err := snake.NewGame(20, 20, []snake.Player{
 		&player,
 		&snake.Random{},
 	}, 5)
 
-	rounds := 500
+	rounds := 10
 	var snakeLen int
 	for i := 0; i < rounds; i++ {
+		fmt.Println(rounds, "rounds")
 		snakeLen = g.PlayerLen(player.ID)
 		gameOver, _ := g.PlayRound()
 		if gameOver || !g.Alive(player.ID) {

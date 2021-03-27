@@ -180,6 +180,89 @@ func (g *Game) newFood() {
 	}
 }
 
+func (g *Game) ThirdLayerVision(id ID) []int8 {
+	s := g.Players[id].snake
+	pos := s.head()
+	var vis []int8
+	switch s.getDir() {
+	case north:
+		/*
+		      5
+		     4V6
+		    3VVV7
+		   2VVXVV8
+		    1VXV9
+		     0X10
+		*/
+		vis = append(vis, g.board.At(pos.y+2, pos.x-1))
+		vis = append(vis, g.board.At(pos.y+1, pos.x-2))
+		vis = append(vis, g.board.At(pos.y, pos.x-3))
+		vis = append(vis, g.board.At(pos.y-1, pos.x-2))
+		vis = append(vis, g.board.At(pos.y-2, pos.x-1))
+		vis = append(vis, g.board.At(pos.y-3, pos.x))
+		vis = append(vis, g.SecondLayerVision(id)...)
+		vis = append(vis, g.board.At(pos.y-2, pos.x+1))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+2))
+		vis = append(vis, g.board.At(pos.y, pos.x+3))
+		vis = append(vis, g.board.At(pos.y+1, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+2, pos.x+1))
+	case east:
+		/*2
+		 1V3
+		0VVV4
+		XXXVV5
+		1VVV6
+		 9V7
+		  8
+		*/
+		vis = append(vis, g.board.At(pos.y-1, pos.x-2))
+		vis = append(vis, g.board.At(pos.y-2, pos.x-1))
+		vis = append(vis, g.board.At(pos.y-3, pos.x))
+		vis = append(vis, g.board.At(pos.y-2, pos.x+1))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+2))
+		vis = append(vis, g.board.At(pos.y, pos.x+3))
+		vis = append(vis, g.SecondLayerVision(id)...)
+		vis = append(vis, g.board.At(pos.y+1, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+2, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+3, pos.x))
+		vis = append(vis, g.board.At(pos.y+2, pos.x-1))
+		vis = append(vis, g.board.At(pos.y+1, pos.x-2))
+	case south:
+		vis = append(vis, g.board.At(pos.y-2, pos.x+1))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+2))
+		vis = append(vis, g.board.At(pos.y, pos.x+3))
+		vis = append(vis, g.board.At(pos.y+1, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+2, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+3, pos.x))
+		vis = append(vis, g.SecondLayerVision(id)...)
+		vis = append(vis, g.board.At(pos.y+2, pos.x-1))
+		vis = append(vis, g.board.At(pos.y+1, pos.x-2))
+		vis = append(vis, g.board.At(pos.y, pos.x-3))
+		vis = append(vis, g.board.At(pos.y-1, pos.x-2))
+		vis = append(vis, g.board.At(pos.y-2, pos.x-1))
+	case west:
+		vis = append(vis, g.board.At(pos.y+1, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+2, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+3, pos.x))
+		vis = append(vis, g.board.At(pos.y+2, pos.x-1))
+		vis = append(vis, g.board.At(pos.y+1, pos.x-2))
+		vis = append(vis, g.board.At(pos.y, pos.x-3))
+		vis = append(vis, g.SecondLayerVision(id)...)
+		vis = append(vis, g.board.At(pos.y-1, pos.x-2))
+		vis = append(vis, g.board.At(pos.y-2, pos.x-1))
+		vis = append(vis, g.board.At(pos.y-3, pos.x))
+		vis = append(vis, g.board.At(pos.y-2, pos.x+1))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+2))
+	}
+	return vis
+}
+
+/*
+     3
+    2V4
+   1VXV5
+    0X6
+*/
 func (g *Game) SecondLayerVision(id ID) []int8 {
 	s := g.Players[id].snake
 	pos := s.head()
@@ -190,6 +273,7 @@ func (g *Game) SecondLayerVision(id ID) []int8 {
 		vis = append(vis, g.board.At(pos.y, pos.x-2))
 		vis = append(vis, g.board.At(pos.y-1, pos.x-1))
 		vis = append(vis, g.board.At(pos.y-2, pos.x))
+		vis = append(vis, g.PrimordialVision(id)...)
 		vis = append(vis, g.board.At(pos.y-1, pos.x+1))
 		vis = append(vis, g.board.At(pos.y, pos.x+2))
 		vis = append(vis, g.board.At(pos.y+1, pos.x+2))
@@ -198,6 +282,7 @@ func (g *Game) SecondLayerVision(id ID) []int8 {
 		vis = append(vis, g.board.At(pos.y-2, pos.x))
 		vis = append(vis, g.board.At(pos.y-1, pos.x+1))
 		vis = append(vis, g.board.At(pos.y, pos.x+2))
+		vis = append(vis, g.PrimordialVision(id)...)
 		vis = append(vis, g.board.At(pos.y+1, pos.x+1))
 		vis = append(vis, g.board.At(pos.y+2, pos.x))
 		vis = append(vis, g.board.At(pos.y+1, pos.x-1))
@@ -206,6 +291,7 @@ func (g *Game) SecondLayerVision(id ID) []int8 {
 		vis = append(vis, g.board.At(pos.y, pos.x+2))
 		vis = append(vis, g.board.At(pos.y+1, pos.x+1))
 		vis = append(vis, g.board.At(pos.y+2, pos.x))
+		vis = append(vis, g.PrimordialVision(id)...)
 		vis = append(vis, g.board.At(pos.y+1, pos.x-1))
 		vis = append(vis, g.board.At(pos.y, pos.x-2))
 		vis = append(vis, g.board.At(pos.y-1, pos.x-2))
@@ -214,6 +300,7 @@ func (g *Game) SecondLayerVision(id ID) []int8 {
 		vis = append(vis, g.board.At(pos.y+2, pos.x))
 		vis = append(vis, g.board.At(pos.y+1, pos.x-1))
 		vis = append(vis, g.board.At(pos.y, pos.x-2))
+		vis = append(vis, g.PrimordialVision(id)...)
 		vis = append(vis, g.board.At(pos.y-1, pos.x-1))
 		vis = append(vis, g.board.At(pos.y-2, pos.x))
 		vis = append(vis, g.board.At(pos.y-1, pos.x+1))
@@ -221,6 +308,10 @@ func (g *Game) SecondLayerVision(id ID) []int8 {
 	return vis
 }
 
+/*
+    1
+   0X2
+*/
 func (g *Game) PrimordialVision(id ID) []int8 {
 	s := g.Players[id].snake
 	pos := s.head()
@@ -247,9 +338,7 @@ func (g *Game) PrimordialVision(id ID) []int8 {
 }
 
 func (g *Game) Vision(id ID) []int8 {
-	vis1 := g.PrimordialVision(id)
-	vis2 := g.SecondLayerVision(id)
-	return append(vis2[:3], vis1[0], vis1[1], vis1[2], vis2[3], vis2[4], vis2[5], vis2[6])
+	return g.ThirdLayerVision(id)
 }
 
 // PlayMove takes a move and aplies it to the game
@@ -278,7 +367,7 @@ func (g *Game) PlayMove(m Move) (dead bool) {
 
 func (g *Game) reduceLife(id ID) (dead bool) {
 	p := g.Players[id]
-	p.life -= 0.01
+	p.life -= 0.02
 	if p.life <= 0 {
 		p.life = 1
 		t := p.snake.tail()

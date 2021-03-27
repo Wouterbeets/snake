@@ -24,7 +24,7 @@ func main() {
 
 	var (
 		runs   = flag.Int("runs", 1, "number of experiments to run")
-		iter   = flag.Int("iterations", 100, "number of iterations for experiment")
+		iter   = flag.Int("iterations", 5, "number of iterations for experiment")
 		cpath  = flag.String("config", "genn.json", "path to the configuration file")
 		epath  = flag.String("efficacy", "xor-samples.txt", "path for efficacy sample file")
 		aiOut  = flag.String("aiout", "ai.json", "path for ai")
@@ -142,7 +142,7 @@ func main() {
 		-1: 'M',
 		0:  ' ',
 		1:  '█',
-		2:  '█',
+		2:  'X',
 	}
 	for i := range players {
 		runes[int8(i)+3] = '█'
