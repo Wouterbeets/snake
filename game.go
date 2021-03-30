@@ -103,7 +103,8 @@ type Position struct {
 type playerInfo struct {
 	Player
 	*snake
-	life float64
+	life   float64
+	maxLen int
 }
 
 func (g *Game) PlayerLen(id ID) int {
@@ -127,7 +128,11 @@ func (g *Game) Board() (b Board) {
 }
 
 func (g *Game) Life(id ID) float64 {
-	return g.Players[id].life * float64(g.PlayerLen(id))
+	currentLen := float64(len(g.Players[id].snake.position) - 2)
+	maxLen := float64(g.Players[id].maxLen - 1)
+	life := g.Players[id].life
+	step := (1.0 - (currentLen / maxLen)) / (maxLen - currentLen)
+	return currentLen/maxLen + (step * life)
 }
 
 // PlayRound processes one game tick
@@ -337,28 +342,145 @@ func (g *Game) PrimordialVision(id ID) []int8 {
 	return vis
 }
 
+func (g *Game) SensorVision(id ID) []int8 {
+	s := g.Players[id].snake
+	pos := s.head()
+	var vis []int8
+	switch s.getDir() {
+	case north:
+		vis = append(vis, g.board.At(pos.y, pos.x-1))
+		vis = append(vis, g.board.At(pos.y, pos.x-2))
+		vis = append(vis, g.board.At(pos.y, pos.x-3))
+		vis = append(vis, g.board.At(pos.y, pos.x-4))
+		vis = append(vis, g.board.At(pos.y, pos.x-5))
+		vis = append(vis, g.board.At(pos.y-1, pos.x-1))
+		vis = append(vis, g.board.At(pos.y-2, pos.x-2))
+		vis = append(vis, g.board.At(pos.y-3, pos.x-3))
+		vis = append(vis, g.board.At(pos.y-4, pos.x-4))
+		vis = append(vis, g.board.At(pos.y-5, pos.x-5))
+		vis = append(vis, g.board.At(pos.y-1, pos.x))
+		vis = append(vis, g.board.At(pos.y-2, pos.x))
+		vis = append(vis, g.board.At(pos.y-3, pos.x))
+		vis = append(vis, g.board.At(pos.y-4, pos.x))
+		vis = append(vis, g.board.At(pos.y-5, pos.x))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y-2, pos.x+2))
+		vis = append(vis, g.board.At(pos.y-3, pos.x+3))
+		vis = append(vis, g.board.At(pos.y-4, pos.x+4))
+		vis = append(vis, g.board.At(pos.y-5, pos.x+5))
+		vis = append(vis, g.board.At(pos.y, pos.x+1))
+		vis = append(vis, g.board.At(pos.y, pos.x+2))
+		vis = append(vis, g.board.At(pos.y, pos.x+3))
+		vis = append(vis, g.board.At(pos.y, pos.x+4))
+		vis = append(vis, g.board.At(pos.y, pos.x+5))
+	case east:
+		vis = append(vis, g.board.At(pos.y-1, pos.x))
+		vis = append(vis, g.board.At(pos.y-2, pos.x))
+		vis = append(vis, g.board.At(pos.y-3, pos.x))
+		vis = append(vis, g.board.At(pos.y-4, pos.x))
+		vis = append(vis, g.board.At(pos.y-5, pos.x))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y-2, pos.x+2))
+		vis = append(vis, g.board.At(pos.y-3, pos.x+3))
+		vis = append(vis, g.board.At(pos.y-4, pos.x+4))
+		vis = append(vis, g.board.At(pos.y-5, pos.x+5))
+		vis = append(vis, g.board.At(pos.y, pos.x+1))
+		vis = append(vis, g.board.At(pos.y, pos.x+2))
+		vis = append(vis, g.board.At(pos.y, pos.x+3))
+		vis = append(vis, g.board.At(pos.y, pos.x+4))
+		vis = append(vis, g.board.At(pos.y, pos.x+5))
+		vis = append(vis, g.board.At(pos.y+1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+2, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+3, pos.x+3))
+		vis = append(vis, g.board.At(pos.y+4, pos.x+4))
+		vis = append(vis, g.board.At(pos.y+5, pos.x+5))
+		vis = append(vis, g.board.At(pos.y+1, pos.x))
+		vis = append(vis, g.board.At(pos.y+2, pos.x))
+		vis = append(vis, g.board.At(pos.y+3, pos.x))
+		vis = append(vis, g.board.At(pos.y+4, pos.x))
+		vis = append(vis, g.board.At(pos.y+5, pos.x))
+	case south:
+		vis = append(vis, g.board.At(pos.y, pos.x+1))
+		vis = append(vis, g.board.At(pos.y, pos.x+2))
+		vis = append(vis, g.board.At(pos.y, pos.x+3))
+		vis = append(vis, g.board.At(pos.y, pos.x+4))
+		vis = append(vis, g.board.At(pos.y, pos.x+5))
+		vis = append(vis, g.board.At(pos.y+1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+2, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+3, pos.x+3))
+		vis = append(vis, g.board.At(pos.y+4, pos.x+4))
+		vis = append(vis, g.board.At(pos.y+5, pos.x+5))
+		vis = append(vis, g.board.At(pos.y+1, pos.x))
+		vis = append(vis, g.board.At(pos.y+2, pos.x))
+		vis = append(vis, g.board.At(pos.y+3, pos.x))
+		vis = append(vis, g.board.At(pos.y+4, pos.x))
+		vis = append(vis, g.board.At(pos.y+5, pos.x))
+		vis = append(vis, g.board.At(pos.y+1, pos.x-1))
+		vis = append(vis, g.board.At(pos.y+2, pos.x-2))
+		vis = append(vis, g.board.At(pos.y+3, pos.x-3))
+		vis = append(vis, g.board.At(pos.y+4, pos.x-4))
+		vis = append(vis, g.board.At(pos.y+5, pos.x-5))
+		vis = append(vis, g.board.At(pos.y, pos.x-1))
+		vis = append(vis, g.board.At(pos.y, pos.x-2))
+		vis = append(vis, g.board.At(pos.y, pos.x-3))
+		vis = append(vis, g.board.At(pos.y, pos.x-4))
+		vis = append(vis, g.board.At(pos.y, pos.x-5))
+	case west:
+		vis = append(vis, g.board.At(pos.y+1, pos.x))
+		vis = append(vis, g.board.At(pos.y+2, pos.x))
+		vis = append(vis, g.board.At(pos.y+3, pos.x))
+		vis = append(vis, g.board.At(pos.y+4, pos.x))
+		vis = append(vis, g.board.At(pos.y+5, pos.x))
+		vis = append(vis, g.board.At(pos.y+1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y+2, pos.x+2))
+		vis = append(vis, g.board.At(pos.y+3, pos.x+3))
+		vis = append(vis, g.board.At(pos.y+4, pos.x+4))
+		vis = append(vis, g.board.At(pos.y+5, pos.x+5))
+		vis = append(vis, g.board.At(pos.y, pos.x+1))
+		vis = append(vis, g.board.At(pos.y, pos.x+2))
+		vis = append(vis, g.board.At(pos.y, pos.x+3))
+		vis = append(vis, g.board.At(pos.y, pos.x+4))
+		vis = append(vis, g.board.At(pos.y, pos.x+5))
+		vis = append(vis, g.board.At(pos.y-1, pos.x+1))
+		vis = append(vis, g.board.At(pos.y-2, pos.x+2))
+		vis = append(vis, g.board.At(pos.y-3, pos.x+3))
+		vis = append(vis, g.board.At(pos.y-4, pos.x+4))
+		vis = append(vis, g.board.At(pos.y-5, pos.x+5))
+		vis = append(vis, g.board.At(pos.y-1, pos.x))
+		vis = append(vis, g.board.At(pos.y-2, pos.x))
+		vis = append(vis, g.board.At(pos.y-3, pos.x))
+		vis = append(vis, g.board.At(pos.y-4, pos.x))
+		vis = append(vis, g.board.At(pos.y-5, pos.x))
+	}
+	return vis
+}
+
 func (g *Game) Vision(id ID) []int8 {
-	return g.ThirdLayerVision(id)
+	return g.SensorVision(id)
 }
 
 // PlayMove takes a move and aplies it to the game
 func (g *Game) PlayMove(m Move) (dead bool) {
-	s := g.Players[m.ID].snake
-	newPos := s.newHeadPos(m)
+	p := g.Players[m.ID]
+	newPos := p.snake.newHeadPos(m)
 
 	if g.board[newPos.y][newPos.x] == food {
-		s.moveTo(newPos, true)
+		p.snake.moveTo(newPos, true)
 		g.restoreLife(m.ID)
 		g.board[newPos.y][newPos.x] = int8(m.ID)
 		g.newFood()
+		if g.Players[m.ID].maxLen < len(p.snake.position) {
+			p.maxLen = len(p.snake.position)
+		}
+		g.Players[m.ID] = p
 		return false
 	}
 
 	if g.board[newPos.y][newPos.x] != empty {
 		return true
 	}
-	t := s.tail()
-	s.moveTo(newPos, false)
+	t := p.snake.tail()
+	p.snake.moveTo(newPos, false)
 	g.board[newPos.y][newPos.x] = int8(m.ID)
 	g.board[t.y][t.x] = empty
 	dead = g.reduceLife(m.ID)
@@ -367,7 +489,7 @@ func (g *Game) PlayMove(m Move) (dead bool) {
 
 func (g *Game) reduceLife(id ID) (dead bool) {
 	p := g.Players[id]
-	p.life -= 0.02
+	p.life -= 0.01
 	if p.life <= 0 {
 		p.life = 1
 		t := p.snake.tail()

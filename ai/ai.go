@@ -1,8 +1,6 @@
 package ai
 
 import (
-	"fmt"
-
 	"github.com/klokare/evo"
 	"github.com/wouterbeets/snake"
 	"gonum.org/v1/gonum/mat"
@@ -46,21 +44,25 @@ func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {
 	player := NetWrapper{Ai: p.Network}
 	g, err := snake.NewGame(20, 20, []snake.Player{
 		&player,
-		&snake.Random{},
-	}, 5)
+	}, 1)
 
-	rounds := 10
+	rounds := 1000
 	var snakeLen int
+	var maxLen int
 	for i := 0; i < rounds; i++ {
-		fmt.Println(rounds, "rounds")
 		snakeLen = g.PlayerLen(player.ID)
+		if snakeLen > maxLen {
+			maxLen = snakeLen
+		}
 		gameOver, _ := g.PlayRound()
 		if gameOver || !g.Alive(player.ID) {
 			r.Fitness += float64(i) / float64(rounds)
 			break
 		}
+		if i == rounds-1 {
+			r.Fitness = 1 * (float64(maxLen) / 10)
+		}
 	}
-	r.Fitness *= float64(snakeLen)
 	return r, nil
 }
 

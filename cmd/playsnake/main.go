@@ -24,7 +24,7 @@ func main() {
 
 	var (
 		runs   = flag.Int("runs", 1, "number of experiments to run")
-		iter   = flag.Int("iterations", 5, "number of iterations for experiment")
+		iter   = flag.Int("iterations", 50000, "number of iterations for experiment")
 		cpath  = flag.String("config", "genn.json", "path to the configuration file")
 		epath  = flag.String("efficacy", "xor-samples.txt", "path for efficacy sample file")
 		aiOut  = flag.String("aiout", "ai.json", "path for ai")
@@ -57,6 +57,7 @@ func main() {
 
 		// Output the best
 		best = genomes[len(genomes)-1]
+		fmt.Println("score in the end", best.Fitness)
 		return nil
 	}
 
@@ -72,7 +73,9 @@ func main() {
 	var netJson []byte
 
 	exp := neat.NewExperiment(cfg)
+	exp.Searcher = snake.NewTrainer{}
 	if *loadAi == "" {
+
 		for r := 0; r < *runs; r++ {
 			if s == nil {
 				exp.AddSubscription(evo.Subscription{Event: evo.Completed, Callback: f}) // Show summary upon completion
@@ -86,6 +89,38 @@ func main() {
 			ctx, fn, cb := evo.WithIterations(context.Background(), *iter)
 			defer fn() // ensure the context cancels
 			exp.AddSubscription(evo.Subscription{Event: evo.Evaluated, Callback: cb})
+			var highestFitness float64
+			saveAIFunc := func(pop evo.Population) error {
+				genomes := make([]evo.Genome, len(pop.Genomes))
+				copy(genomes, pop.Genomes)
+
+				// Sort so the best genome is at the end
+				evo.SortBy(genomes, evo.BySolved, evo.ByFitness, evo.ByComplexity, evo.ByAge)
+
+				// Output the best
+				best := genomes[len(genomes)-5:]
+				substrates := make([]evo.Substrate, 0, len(best))
+				var sumScore float64
+				for _, s := range best {
+					substrates = append(substrates, s.Decoded)
+					sumScore += s.Fitness
+				}
+				roundBest := best[len(best)-1].Fitness
+				fmt.Printf("gen %d \t sum top 5 %.3f \t avg %.3f \t best %.3f \t alltime %.3f\n", pop.Generation, sumScore, sumScore/float64(len(best)), roundBest, highestFitness)
+				if highestFitness < roundBest {
+					highestFitness = roundBest
+					netJson, err = json.MarshalIndent(substrates, "", "\t")
+					file, err := os.Create(*aiOut)
+					if err != nil {
+						panic(err.Error())
+					}
+					fmt.Fprintf(file, string(netJson))
+					file.Close()
+				}
+
+				return nil
+			}
+			exp.AddSubscription(evo.Subscription{Event: evo.Evaluated, Callback: saveAIFunc})
 
 			// Stop the experiment if there is a solution
 			ctx, fn, cb = evo.WithSolution(ctx)
@@ -96,13 +131,6 @@ func main() {
 				log.Fatalf("%+v\n", err)
 			}
 		}
-		netJson, err = json.MarshalIndent(best.Decoded, "", "\t")
-		file, err := os.Create(*aiOut)
-		if err != nil {
-			panic(err.Error())
-		}
-		fmt.Fprintf(file, string(netJson))
-		file.Close()
 	} else {
 		aiFromFile, err := os.Open(*loadAi)
 		if err != nil {
@@ -115,22 +143,28 @@ func main() {
 
 	}
 
-	var sub evo.Substrate
+	var sub []evo.Substrate
 	err = json.Unmarshal(netJson, &sub)
 	if err != nil {
 		panic(err.Error())
 	}
 
-	net, err := exp.Translate(sub)
-	if err != nil {
-		panic(err.Error())
+	var nets []*ai.NetWrapper
+	for _, s := range sub {
+		net, err := exp.Translate(s)
+		if err != nil {
+			panic(err.Error())
+		}
+		nets = append(nets, &ai.NetWrapper{Ai: net})
 	}
 
-	framerate := 200 * time.Millisecond
+	framerate := 20 * time.Millisecond
 	sc := term.Screen{Input: make(chan [][]rune), UserInput: make(chan rune)}
 	players := []snake.Player{
 		&snake.Human{Input: sc.UserInput, Framerate: framerate},
-		&ai.NetWrapper{Ai: net},
+	}
+	for _, n := range nets {
+		players = append(players, n)
 	}
 	g, err := snake.NewGame(20, 20, players, 5)
 	if err != nil {
@@ -147,7 +181,7 @@ func main() {
 	for i := range players {
 		runes[int8(i)+3] = '█'
 	}
-	for i := 0; i < 1000; i++ {
+	for i := 0; i < 10000; i++ {
 		gameOver, state := g.PlayRound()
 		sc.Input <- stateToRune(state, runes)
 		if gameOver {
