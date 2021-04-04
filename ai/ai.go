@@ -29,8 +29,9 @@ func (n *NetWrapper) SetID(id snake.ID) {
 }
 
 type NetWrapper struct {
-	Ai evo.Network
-	ID snake.ID
+	Ai     evo.Network
+	ID     snake.ID
+	maxLen int
 }
 
 func (e Evaluator) Evaluate(p evo.Phenome) (r evo.Result, err error) {

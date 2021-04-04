@@ -49,7 +49,11 @@ func (b Board) At(y, x int) int8 {
 	if x < 0 {
 		return wall
 	}
-	return b[y][x]
+	ret := b[y][x]
+	if ret > 2 {
+		ret = 2
+	}
+	return ret
 }
 
 func newBoard(height, width int) Board {
@@ -108,7 +112,10 @@ type playerInfo struct {
 }
 
 func (g *Game) PlayerLen(id ID) int {
-	return len(g.Players[id].snake.position)
+	if _, ok := g.Players[id]; ok {
+		return len(g.Players[id].snake.position)
+	}
+	return 0
 }
 
 func (g *Game) Alive(id ID) bool {

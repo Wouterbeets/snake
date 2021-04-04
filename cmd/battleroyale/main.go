@@ -24,7 +24,7 @@ func main() {
 
 	var (
 		runs   = flag.Int("runs", 1, "number of experiments to run")
-		iter   = flag.Int("iterations", 50000, "number of iterations for experiment")
+		iter   = flag.Int("iterations", 1000, "number of iterations for experiment")
 		cpath  = flag.String("config", "genn.json", "path to the configuration file")
 		epath  = flag.String("efficacy", "xor-samples.txt", "path for efficacy sample file")
 		aiOut  = flag.String("aiout", "ai.json", "path for ai")
@@ -43,7 +43,8 @@ func main() {
 		src,                  // Lastly, consult the configuration file
 	})}
 
-	var best evo.Genome
+	var netJson []byte
+	var best []evo.Genome
 	f := func(pop evo.Population) error {
 
 		genomes := make([]evo.Genome, len(pop.Genomes))
@@ -51,13 +52,23 @@ func main() {
 
 		// Sort so the best genome is at the end
 		evo.SortBy(genomes, evo.BySolved, evo.ByFitness, evo.ByComplexity, evo.ByAge)
-		for i := range genomes {
-			fmt.Printf("%.2f\n", genomes[i].Fitness)
-		}
 
 		// Output the best
-		best = genomes[len(genomes)-10]
-		fmt.Println("score in the end", best.Fitness)
+		best = genomes[len(genomes)-10:]
+
+		substrates := make([]evo.Substrate, 0, len(best))
+		var sumScore float64
+		for _, s := range best {
+			substrates = append(substrates, s.Decoded)
+			sumScore += s.Fitness
+		}
+		netJson, err = json.MarshalIndent(substrates, "", "\t")
+		file, err := os.Create("end.json")
+		if err != nil {
+			panic(err.Error())
+		}
+		fmt.Fprintf(file, string(netJson))
+		file.Close()
 		return nil
 	}
 
@@ -70,9 +81,8 @@ func main() {
 		defer s.Close()
 	}
 
-	var netJson []byte
-
 	exp := neat.NewExperiment(cfg)
+	exp.Searcher = ai.Trainer{}
 	if *loadAi == "" {
 
 		for r := 0; r < *runs; r++ {
@@ -96,22 +106,22 @@ func main() {
 				// Sort so the best genome is at the end
 				evo.SortBy(genomes, evo.BySolved, evo.ByFitness, evo.ByComplexity, evo.ByAge)
 
+				var sumScore float64
+				for _, g := range genomes {
+					sumScore += g.Fitness
+				}
+
 				// Output the best
 				best := genomes[len(genomes)-10:]
 				substrates := make([]evo.Substrate, 0, len(best))
-				var sumScore float64
 				for _, s := range best {
 					substrates = append(substrates, s.Decoded)
-					sumScore += s.Fitness
-				}
-				netJson, err = json.MarshalIndent(substrates, "", "\t")
-				if err != nil {
-					panic(err.Error())
 				}
 				roundBest := best[len(best)-1].Fitness
-				fmt.Printf("gen %d \t sum top 5 %.3f \t avg %.3f \t best %.3f \t alltime %.3f\n", pop.Generation, sumScore, sumScore/float64(len(best)), roundBest, highestFitness)
+				fmt.Printf("gen %d \t sum  %.3f \t avg %.3f \t best %.3f \t alltime %.3f\n", pop.Generation, sumScore, sumScore/float64(len(genomes)), roundBest, highestFitness)
 				if highestFitness < roundBest {
 					highestFitness = roundBest
+					netJson, err = json.MarshalIndent(substrates, "", "\t")
 					file, err := os.Create(*aiOut)
 					if err != nil {
 						panic(err.Error())
@@ -160,7 +170,7 @@ func main() {
 		nets = append(nets, &ai.NetWrapper{Ai: net})
 	}
 
-	framerate := 20 * time.Millisecond
+	framerate := 100 * time.Millisecond
 	sc := term.Screen{Input: make(chan [][]rune), UserInput: make(chan rune)}
 	players := []snake.Player{
 		&snake.Human{Input: sc.UserInput, Framerate: framerate},
@@ -178,10 +188,19 @@ func main() {
 		-1: 'M',
 		0:  ' ',
 		1:  '█',
-		2:  'X',
-	}
-	for i := range players {
-		runes[int8(i)+3] = '█'
+		2:  '2',
+		3:  '3',
+		4:  '4',
+		5:  '5',
+		6:  '6',
+		7:  '7',
+		8:  '8',
+		9:  '9',
+		10: 'a',
+		11: 'b',
+		12: 'c',
+		13: 'd',
+		14: 'e',
 	}
 	for i := 0; i < 10000; i++ {
 		gameOver, state := g.PlayRound()

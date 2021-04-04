@@ -1,0 +1,10545 @@
+{
+	"Nodes": [
+		{
+			"Layer": 0,
+			"X": 0,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0,
+			"X": 0.1,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0,
+			"X": 0.2,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0,
+			"X": 0.3,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0,
+			"X": 0.4,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0,
+			"X": 0.5,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0,
+			"X": 0.6,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0,
+			"X": 0.7,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0,
+			"X": 0.8,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0,
+			"X": 0.9,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0,
+			"X": 1,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 1,
+			"Activation": 1,
+			"Bias": 0,
+			"Locked": false
+		},
+		{
+			"Layer": 0.03125,
+			"X": 0.965625,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.17496038372778988,
+			"Locked": false
+		},
+		{
+			"Layer": 0.0625,
+			"X": 0.1875,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.72764912748393,
+			"Locked": false
+		},
+		{
+			"Layer": 0.0625,
+			"X": 0.5,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.3108258109543867,
+			"Locked": false
+		},
+		{
+			"Layer": 0.0625,
+			"X": 0.93125,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.7658393867648672,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.025,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.017020017171646,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.15000000000000002,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.2888384694192214,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.17500000000000002,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.3160047164290103,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.3125,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.6412133016659012,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.375,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.6981856997412972,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.4875,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.19246316156366,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.5,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -5.276251043601173,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.675,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.0999458032531209,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.7250000000000001,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -3.185912041438286,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.8625,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.905007132169936,
+			"Locked": false
+		},
+		{
+			"Layer": 0.125,
+			"X": 0.875,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 2.03993735877504,
+			"Locked": false
+		},
+		{
+			"Layer": 0.1875,
+			"X": 0.6125,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 4.830468755131555,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 2.309938343522526,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.05,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.962879177426376,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.1,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 5.02089504359452,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.15000000000000002,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 4.880043917234266,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.175,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.492663911145825,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.2,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.10144171745618769,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.22499999999999998,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 4.666951181110192,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.25,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -6.316437414960918,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.3,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.16005879313694948,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.35,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 2.0002699738746523,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.4,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.271837661049534,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.42500000000000004,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 2.442493635382557,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.44999999999999996,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.947725621846007,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.475,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.506193667647741,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.5,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.0651159237520407,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.525,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.859360260970864,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.55,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.5507710772200158,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.6000000000000001,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.1653121411366332,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.625,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 4.284998307852359,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.6499999999999999,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.6336476217170643,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.65,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.3895497319917314,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.675,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 2.51874581265655,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.7,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.4233411656997174,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.725,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.193072325736074,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.7250000000000001,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -3.0987020978089728,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.75,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.8173935707278206,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.8,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.4696589443988448,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.825,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 2.0807935202979895,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.925,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -8,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 0.95,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 6.587394384718621,
+			"Locked": false
+		},
+		{
+			"Layer": 0.25,
+			"X": 1,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -0.427672675267106,
+			"Locked": false
+		},
+		{
+			"Layer": 0.3125,
+			"X": 0.0625,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.8953467643896107,
+			"Locked": false
+		},
+		{
+			"Layer": 0.3125,
+			"X": 0.3,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.41663945585927,
+			"Locked": false
+		},
+		{
+			"Layer": 0.375,
+			"X": 0,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.2386225241073128,
+			"Locked": false
+		},
+		{
+			"Layer": 0.375,
+			"X": 0.07500000000000001,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.086362094246975,
+			"Locked": false
+		},
+		{
+			"Layer": 0.375,
+			"X": 0.1875,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.41650808728185296,
+			"Locked": false
+		},
+		{
+			"Layer": 0.375,
+			"X": 0.2,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.7264592968859196,
+			"Locked": false
+		},
+		{
+			"Layer": 0.375,
+			"X": 0.25,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -0.09844234981273625,
+			"Locked": false
+		},
+		{
+			"Layer": 0.375,
+			"X": 0.26249999999999996,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.27745468819227,
+			"Locked": false
+		},
+		{
+			"Layer": 0.375,
+			"X": 0.325,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.021960693506330786,
+			"Locked": false
+		},
+		{
+			"Layer": 0.375,
+			"X": 0.575,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.24479234295250896,
+			"Locked": false
+		},
+		{
+			"Layer": 0.375,
+			"X": 0.5875,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 6.6140379290194815,
+			"Locked": false
+		},
+		{
+			"Layer": 0.4375,
+			"X": 0.08750000000000001,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.7987668763812312,
+			"Locked": false
+		},
+		{
+			"Layer": 0.4375,
+			"X": 0.3,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 6.002643355741117,
+			"Locked": false
+		},
+		{
+			"Layer": 0.4375,
+			"X": 0.3125,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.6154658353701516,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 5.9513558472216275,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.05,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -0.7451718708291966,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.1,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -3.2286560141965106,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.15,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.564502865295029,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.2,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.7084048083488375,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.25,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.2386460576883973,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.3,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 2.152551744920637,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.35,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -5.132379373595471,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.4,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.7253545451133498,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.45,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 5.867576422121487,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.5,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -0.9918005326660762,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.55,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.3194221265531962,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.6,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -3.2508313872711048,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.65,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.4436644224789044,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.7,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.5175430183286216,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.75,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.604049402647715,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.8,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 2.023333267601879,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.85,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.2474442353734605,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.9,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.26406553398423815,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 0.95,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.047996827323305,
+			"Locked": false
+		},
+		{
+			"Layer": 0.5,
+			"X": 1,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -0.5755444418025459,
+			"Locked": false
+		},
+		{
+			"Layer": 0.546875,
+			"X": 0.365625,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.2983377872843955,
+			"Locked": false
+		},
+		{
+			"Layer": 0.625,
+			"X": 0.21250000000000002,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.9899651395957607,
+			"Locked": false
+		},
+		{
+			"Layer": 0.625,
+			"X": 0.36250000000000004,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.8335825757442876,
+			"Locked": false
+		},
+		{
+			"Layer": 0.625,
+			"X": 0.475,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -0.678769204775857,
+			"Locked": false
+		},
+		{
+			"Layer": 0.625,
+			"X": 0.5625,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 2.182463420166635,
+			"Locked": false
+		},
+		{
+			"Layer": 0.625,
+			"X": 0.625,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.154665901869312,
+			"Locked": false
+		},
+		{
+			"Layer": 0.625,
+			"X": 0.7375,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 6.336062467088324,
+			"Locked": false
+		},
+		{
+			"Layer": 0.625,
+			"X": 0.7749999999999999,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.3132430848333805,
+			"Locked": false
+		},
+		{
+			"Layer": 0.65625,
+			"X": 0.41875,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -5.4058185865905335,
+			"Locked": false
+		},
+		{
+			"Layer": 0.6875,
+			"X": 0.26875000000000004,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.7527458776105598,
+			"Locked": false
+		},
+		{
+			"Layer": 0.6875,
+			"X": 0.5375000000000001,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.8544658651411012,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.025,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 8,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.05,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.8774283525322821,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.075,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.7940114685057351,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.1,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.8032049529484109,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.175,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.177675813803498,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.275,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -0.7496223509438721,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.3,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.8190056524191545,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.325,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.7972494530894334,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.375,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.8698077466404617,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.425,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 2.820947466486783,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.45,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -5.214857988172412,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.475,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 8,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.525,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -0.4686221528493011,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.55,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.3269264665043847,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.575,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.8446621765522344,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.625,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.790381633499468,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.65,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -5.27179533964359,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.7,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.210807618435999,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.725,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 3.509203280443482,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.8,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 6.800954963715013,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.825,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -7.366095606434534,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.85,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.337499262654724,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.875,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.5895800907594924,
+			"Locked": false
+		},
+		{
+			"Layer": 0.75,
+			"X": 0.925,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.3762101541987364,
+			"Locked": false
+		},
+		{
+			"Layer": 0.8125,
+			"X": 0.07500000000000001,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 6.972208819374285,
+			"Locked": false
+		},
+		{
+			"Layer": 0.8125,
+			"X": 0.22499999999999998,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.153486874452157,
+			"Locked": false
+		},
+		{
+			"Layer": 0.875,
+			"X": 0.0375,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -4.1843323556731375,
+			"Locked": false
+		},
+		{
+			"Layer": 0.875,
+			"X": 0.05,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.113933393454951,
+			"Locked": false
+		},
+		{
+			"Layer": 0.875,
+			"X": 0.15,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 1.1826299756830139,
+			"Locked": false
+		},
+		{
+			"Layer": 0.875,
+			"X": 0.1875,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": 0.6761295039245806,
+			"Locked": false
+		},
+		{
+			"Layer": 0.875,
+			"X": 0.4875,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -1.8919705897689159,
+			"Locked": false
+		},
+		{
+			"Layer": 0.875,
+			"X": 0.525,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -3.5979901510057117,
+			"Locked": false
+		},
+		{
+			"Layer": 0.875,
+			"X": 0.925,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -0.8105677423659536,
+			"Locked": false
+		},
+		{
+			"Layer": 0.9375,
+			"X": 0.025,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 2,
+			"Activation": 3,
+			"Bias": -2.441342956085136,
+			"Locked": false
+		},
+		{
+			"Layer": 1,
+			"X": 0,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 3,
+			"Activation": 3,
+			"Bias": -1.8320589960308054,
+			"Locked": false
+		},
+		{
+			"Layer": 1,
+			"X": 0.5,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 3,
+			"Activation": 3,
+			"Bias": 2.0608156429476736,
+			"Locked": false
+		},
+		{
+			"Layer": 1,
+			"X": 1,
+			"Y": 0,
+			"Z": 0,
+			"Neuron": 3,
+			"Activation": 3,
+			"Bias": -1.5210305461170361,
+			"Locked": false
+		}
+	],
+	"Conns": [
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.025,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.0634921954247076,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.359622948731031,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.8689745903404362,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.175,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.8790594624701749,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.7699557493943026,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.7250000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.221229464671244,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.822786792819292,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.605337132964561,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.8252470552499737,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.5556105270756575,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.857278784759562,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.0809278414018952,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.8640801732968058,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.6572751428613275,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.479865670627972,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.326782780603192,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.425,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.2420267393565463,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.557905796429957,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.5688258808942201,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.803222827469285,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.15000000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.370934078644396,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.3125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.269887750023948,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.5813754505394755,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.9342164580429775,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.9787577900454396,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.8291038181917925,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.270588219892498,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.62538100181069,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.4375,
+				"X": 0.3125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.3455766113247662,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.07194601475987283,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.960705857136483,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.4655772088449135,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.8175900102068983,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.00124560526804,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.513688254164256,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.968870811345807,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.109955523115208,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.274615628746483,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.3360235641647646,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.0625,
+				"X": 0.1875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.083160071473094,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.17500000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.079287507958698,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.15000000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.7080180288924698,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.717991074222902,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.7100756263668297,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.05274337618035885,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.3844865661372254,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.208743543065526,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.990936866359806,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.6300791471733658,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.658247040898093,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.898739177108284,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.15000000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.132198872845502,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.22499999999999998,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.886194972131044,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.8546058568749901,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.550566875391741,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.712446992764101,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.524212638172124,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.3542672788102816,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.317787653152532,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.9948820159581748,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 7.725371481853128,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.031771898039678,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.1768847763467876,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.933194034101555,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.5679337987629793,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.6328723155894367,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.27802972093757,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.8337765424773576,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.4512759690559975,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.42500000000000004,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.726773043461903,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.9232601340699707,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.9515114894762454,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.884824073361324,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.585187322490848,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.5201153443951005,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.750548099752709,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.7196439548856186,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.13702534718026627,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.608909513655844,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.7251407610051266,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.9393717668083186,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.3772091069285075,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.2195011613894478,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.0625,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.211657929355987,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.4875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.7820787649205156,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.3684818247243165,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.6108100471774507,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.971345924333527,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.835407500736869,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.002572070080223,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.9622890871256864,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.17678041510726253,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.02043919621679,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.053297460093772,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.286544093354184,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.776758371661851,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.668067664411785,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.078172286132526,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.171528752151973,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.885942798668814,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.8385422309938322,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.305052554239629,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.5083310368494445,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.515394410729984,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.5598106423201465,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.44999999999999996,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.7598843967287277,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.8612754995430658,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.6499999999999999,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.7226942558858855,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.90082753929069,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.9930353943466628,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.6157723672784883,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.3350422139170117,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 7.341089857453805,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.8268873697786137,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.596942388457928,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.369153899420704,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.9520877513586306,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.7285473957263267,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.884569786117459,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.8019995623720915,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.15000000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.6287135483982251,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.6345744011080936,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.24555934292430104,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.362566550841587,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.5292507881042097,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.053723370643826,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.733565775264369,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.301695732968306,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.640307197766438,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.4309790602449892,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.08526917355842788,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.3983905634904383,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.2879737144232761,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.636303957737879,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.675,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.39365589502910925,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.7250000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.048302223267173,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.8723905937130425,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.44999999999999996,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.190641399670257,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.889433791447641,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.6000000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.624472800226643,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.400202492376123,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.7250000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.656075100970562,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.883560065617017,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.749613698718311,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.11595411316488313,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.2881661068790735,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.037902552205216544,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.218320649680928,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.9124046704591624,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.62984104469742,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.565376492824018,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.1267811055466037,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.1757879392768835,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.451549072081413,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.415409703901521,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.7330170069843256,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.437571884341845,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.3933385319705787,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.975531909633201,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.9966936880819195,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.920825824975401,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.649219192985474,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.37420536929216,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.7737712205609921,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 7.655159802854629,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.7549564042248881,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.03125,
+				"X": 0.965625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.445364405382472,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.0625,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.839664013752321,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.0625,
+				"X": 0.93125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.360324538108169,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.8625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.367133380309931,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.048858490648405,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.675,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.705626485081999,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.0679620976999007,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.3911101329793167,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.825,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.182277703785349,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.38434370121100736,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.3125,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.970180008721078,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.9416037116702205,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.5908600447157628,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.2760123789217128,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.067262935331748,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.4238489059262895,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.745558445588157,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.5328066802449207,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.470264930479931,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 7.837750693832055,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.025639816166724,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.175,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.1238621198269017,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.567514263906314,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.8170502479410695,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.03125,
+				"X": 0.965625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.0625,
+				"X": 0.93125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.07294614612169043,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.0625,
+				"X": 0.1875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.17500000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.635412621311372,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.0625,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.4117956250098773,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.0625,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.635200471481781,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.0625,
+				"X": 0.93125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.125,
+				"X": 0.8625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.025,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.15000000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.9486178365234741,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.15000000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.645754542062732,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.17500000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.15000000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.5486926496081641,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.3125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.074088827994823,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.3125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.825,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.1397060084791057,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.6577789639098228,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.4875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.0388480220052436,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.843951269819758,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.4375,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.9126315094168476,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.425614897605635,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.675,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.1875,
+				"X": 0.6125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.091807106156867,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.675,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.066842998200835,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.7250000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.4298399782284186,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.8625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.103172564122289,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.353994428070113,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.125,
+				"X": 0.875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.829052567365348,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.1875,
+				"X": 0.6125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.25,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.4164881530318625,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.6497009128068472,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 7.300870811587114,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.258440972529998,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.3125,
+				"X": 0.0625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.250404066905749,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.07500000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.4282106087362276,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.8020109339929182,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.15000000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.465177588326339,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.15000000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.500526150217608,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.15000000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.03742168093913,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.175,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.26249999999999996,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.175,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.862049705623027,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.033031961174395,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.9680050664579707,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.22499999999999998,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.1875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.9169219603381915,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.22499999999999998,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.60724152520817,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.22499999999999998,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.65625,
+				"X": 0.41875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.8548751578153855,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.562309870850771,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.367685635490418,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.3949051696784192,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.0153062411834055,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.284181997536324,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.3125,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.670167563172589,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.980858134143623,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.0986733811355052,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.348655359017,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.42500000000000004,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.44999999999999996,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.26345307861873657,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.44999999999999996,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.108664462322138,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.44999999999999996,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.0262499714551865,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.44999999999999996,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.6886648948699352,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.6653824931186307,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.5571436017410174,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.5875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.9581227199193245,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.7315978875029243,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.525370065956891,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.752748811143986,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.552958650792668,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.575,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.793703499547068,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.6047055613260732,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.2117887391778623,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.62613003243768,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.6000000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.754841015343653,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.5613790171674795,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.6499999999999999,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.0451265342727325,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.792402548710648,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.675,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.319098278957207,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.440632499037366,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.8740778995107785,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.117386155528889,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.7250000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.741936031460291,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.4875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.5618543513071264,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.7639815890537855,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.825,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.689130896649573,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.825,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.462037083702072,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.644480283899595,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.017708104947872,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.1804068069651934,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.3079893871742923,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.25,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.71681575764507,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.3125,
+				"X": 0.0625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.07500000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.517024671413688,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.3125,
+				"X": 0.0625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.075,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.3745621980655973,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.3125,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.375,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.5210217053523967,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.3125,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.076637975863472,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.6338499586716688,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.07500000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.4375,
+				"X": 0.08750000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.222232694384015,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.07500000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.407093350558636,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.07500000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.40907203727761576,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.1875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.3447180637471818,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.737349742170079,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.803309382978148,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.26249999999999996,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.976184522426213,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.26249999999999996,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.2775377666779972,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.3745985970572505,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.575,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.575,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.465521128801557,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.575,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.4370381999810977,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.575,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.997351356749482,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.375,
+				"X": 0.5875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.7001223110002912,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.4375,
+				"X": 0.08750000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.2022886539559974,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.4375,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.20736449956484115,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.4375,
+				"X": 0.3125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.5,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.4375,
+				"X": 0.3125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.546875,
+				"X": 0.365625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.392763815378153,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.4375,
+				"X": 0.3125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.65625,
+				"X": 0.41875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.9747632018125265,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.4375,
+				"X": 0.3125,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.199638389097126,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.0044251693334347,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.7555988159944893,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.025,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.675189713034775,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.275,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.3476656302861376,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.271878767501536,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.0678163855629137,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.625,
+				"X": 0.21250000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.878434252301423,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.080507153530402,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.27486283469282213,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.064309059268418,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.801222636372722,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.290123173155249,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.075,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.867487305342392,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.178364142023506,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.46003559768141367,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.984426127134721,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.671979499183836,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.8319103071528744,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.2,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.177842332450057,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.65625,
+				"X": 0.41875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.523134546898354,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.1875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.690439335795453,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.465147850604627,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.8603803477386671,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.25,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.671502927531936,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.625,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.145662071958557,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.075,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.285307009273981,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.8693289837993685,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.018389743944768,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.41281784281554756,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.2820168749957533,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.4855665462427237,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.338025614175087,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.175,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.649489309925978,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.425,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.1939686515323702,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.434734300601434,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.35,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.625,
+				"X": 0.625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.07145808308305024,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.075,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.0512558256272295,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.9182556853018697,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.521907998839693,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.277403657796229,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.375715285244189,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.127098610166978,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.4,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.9713187172663529,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.625,
+				"X": 0.36250000000000004,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.1459242642863385,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.275,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.387006065736399,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.568238329744898,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.9618201901855514,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.915294345290534,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.677125382215548,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.163503374107098,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.366250114638091,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.001297006585228,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.8814298722589631,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.822011170168038,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.9614983828998697,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.200580437591404,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.6875,
+				"X": 0.5375000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.166781171087243,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.275,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.7835607222682417,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.6438920679007658,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.322885880960643,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.275421428339587,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.9938189127538204,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.9738692033244045,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.4197186714018672,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.030143610631707,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.998236188186068,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.164589761776372,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.0586819570115322,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.6,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.4897013560050714,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.307094338138193,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.575,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.015454490047353,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.737348208324161,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.825,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.6795003899113214,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 7.799193275197567,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.802044176444284,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.721311664528416,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.9688691857115048,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.625,
+				"X": 0.7749999999999999,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.405337437011148,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.8819552520883851,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.499962277812211,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.60931548934995,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.7613601463953055,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.625,
+				"X": 0.5625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.095308505560798,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.625,
+				"X": 0.7375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.9041192919103516,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.275,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.955544047318655,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.449313158005102,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.7283425707190196,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.908613293185694,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.786769976911016,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.1875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.403796789552697,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.673636163574331,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 7.134913574062791,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.75,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.350496688083749,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.6875,
+				"X": 0.5375000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.5580081280937907,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.425,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 7.1707036858418105,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.688367815071437,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.1660253136777756,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.895193317143357,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.036298341742531,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.575,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.2502998077320875,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.014655403724224,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.9451513151916675,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.9,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.6121365919621613,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.369695923018498,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 0.95,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.577189419275816,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.137033609710496,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.5,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.780129868155015,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.546875,
+				"X": 0.365625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.65625,
+				"X": 0.41875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.006142181597337,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.625,
+				"X": 0.21250000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.6875,
+				"X": 0.26875000000000004,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.625,
+				"X": 0.21250000000000002,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.7344108446592195,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.625,
+				"X": 0.36250000000000004,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.275,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.625,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.6855169508649044,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.625,
+				"X": 0.5625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.2092547293039275,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.625,
+				"X": 0.625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.5765070919174881,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.625,
+				"X": 0.7375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.820125821222011,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.625,
+				"X": 0.7749999999999999,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.9093518816940875,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.65625,
+				"X": 0.41875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.6203024488728279,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.6875,
+				"X": 0.26875000000000004,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 7.225972490340059,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.6875,
+				"X": 0.5375000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.0073607713904424,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.6875,
+				"X": 0.5375000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.3702909625078945,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.025,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.4933532410970045,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.0159436561432837,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.075,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.0375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.698185568772513,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.075,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.01338254581193,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.075,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -7.070126318149863,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.075,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.6639470365820648,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.8125,
+				"X": 0.07500000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.281965641433018,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.3853997354197665,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.9386352849221358,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.175,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.20533431952585968,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.275,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.8125,
+				"X": 0.07500000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -5.012592667341897,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.275,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.275,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.83711271700543,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.8125,
+				"X": 0.22499999999999998,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.386197274440092,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.7179768912777056,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.3,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.0341746082375973,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.31758208042852,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.325,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.1875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 7.831249485578408,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.9337739254864996,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.425,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.2236979380904414,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.45,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.6806962160557477,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.4875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.839214162565722,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.475,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.0024041303758484123,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.4875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.9740423667555844,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.972791942156242,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.8125,
+				"X": 0.07500000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.364604454946115,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.253079336047521,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 6.8408136467863505,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.55,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.415068360979847,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.575,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.35134239908785103,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.575,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.977721840665296,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.9804901154950341,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.625,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.8228897833127593,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.1875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.6446628527347652,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.65,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.989184183956619,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.8125,
+				"X": 0.07500000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.394668601687184,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.7,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.33382281021221893,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.2923364601675136,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.725,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 2.576571826596058,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -4.208141217755921,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.8,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.4764946325111143,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.825,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 5.142363883562679,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.825,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.4191793045271548,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.706596850277084,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.615602998680405,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.85,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.5956283103118376,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.6737157107441534,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.749948773288132,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.75,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.8125,
+				"X": 0.07500000000000001,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.8125,
+				"X": 0.22499999999999998,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.875,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.4227620729651624,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.0375,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.167609715768908,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 0.9375,
+				"X": 0.025,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.668109662748706,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.05,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 8,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.15,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -2.1322736359241596,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.1875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 1.0617377062884437,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.4875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -3.7625196231398963,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.4875,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.4824222442358357,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -1.5188146969241831,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0.5,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -6.018479355815067,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.525,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 0.8509859329638767,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": -0.18513196979991364,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.875,
+				"X": 0.925,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 1,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 4.354891479214849,
+			"Enabled": true,
+			"Locked": false
+		},
+		{
+			"Source": {
+				"Layer": 0.9375,
+				"X": 0.025,
+				"Y": 0,
+				"Z": 0
+			},
+			"Target": {
+				"Layer": 1,
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Weight": 3.935952185746001,
+			"Enabled": true,
+			"Locked": false
+		}
+	]
+}

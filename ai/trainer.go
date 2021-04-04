@@ -10,27 +10,70 @@ type Trainer struct {
 
 // Search doesn't use the eval fuction
 func (s Trainer) Search(eval evo.Evaluator, phenomes []evo.Phenome) (results []evo.Result, err error) {
-	var players []snake.Player
+	players := make(map[int64]snake.Player, len(phenomes))
+	var playerSlice []snake.Player
 	for _, p := range phenomes {
-		players = append(players, &NetWrapper{Ai: p.Network})
+		ai := &NetWrapper{Ai: p.Network}
+		players[p.ID] = ai
+		playerSlice = append(playerSlice, ai)
 	}
-	g, _ := snake.NewGame(len(players)*3, len(players)*3, players, len(players))
+	playerSlice = append(playerSlice, &snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+		&snake.Random{},
+	)
+
+	g, _ := snake.NewGame(len(players)*3, len(players)*3, playerSlice, len(players)*10)
 	rounds := 1000
 	for i := 0; i < rounds; i++ {
 		gameOver, _ := g.PlayRound()
-		for _, player := range players {
+		for id, player := range players {
 			// if we have performance issues we can implement a Dead() interface
 			// this interface could allow us to notify which snake is dead by sending their id on a channel
+			pl := g.PlayerLen(player.(*NetWrapper).ID)
+			if pl > player.(*NetWrapper).maxLen {
+				player.(*NetWrapper).maxLen = pl
+			}
 			if !g.Alive(player.(*NetWrapper).ID) {
 				// add result
-				//if i == rounds-1 {
-				//	r.Fitness = 1 * (float64(maxLen) / 10)
-				//}
+				fit := float64(i) / float64(rounds)
+				maxLen := float64(player.(*NetWrapper).maxLen)
+				r := evo.Result{
+					ID:      id,
+					Fitness: fit + maxLen/10,
+				}
+				results = append(results, r)
+				delete(players, id)
 			}
 		}
-		if gameOver {
-			// check all players and return result
+		if len(players) == 0 || gameOver {
+			return results, nil
 		}
 	}
-	return nil, nil
+	return
 }
