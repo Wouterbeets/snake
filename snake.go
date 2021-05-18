@@ -13,18 +13,32 @@ func randomPos(width, height int) Position {
 	return Position{x: rand.Intn(width-2) + 1, y: rand.Intn(height-2) + 1}
 }
 
+func randomDir() (int, int) {
+	dir := rand.Int() % 4
+	if dir == 0 {
+		return -1, 0
+	} else if dir == 1 {
+		return 1, 0
+	} else if dir == 2 {
+		return 0, -1
+	} else {
+		return 0, 1
+	}
+}
+
 func newSnake(board Board, id ID) *snake {
 	rand.Seed(time.Now().UnixNano())
 	s := snake{position: make([]Position, 2)}
+	diry, dirx := randomDir()
 	for {
 		pos := randomPos(len(board[0]), len(board))
 		x := pos.x
 		y := pos.y
-		if board[y][x] == empty && board[y][x+1] == empty {
+		if board[y][x] == empty && board[y+diry][x+dirx] == empty {
 			board[y][x] = int8(id)
-			board[y][x+1] = int8(id)
+			board[y+diry][x+dirx] = int8(id)
 			s.position[0].x, s.position[0].y = x, y
-			s.position[1].x, s.position[1].y = x+1, y
+			s.position[1].x, s.position[1].y = x+dirx, y+diry
 			return &s
 		}
 	}

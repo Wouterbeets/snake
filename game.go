@@ -7,9 +7,9 @@ import (
 )
 
 const (
-	empty = iota
-	wall
-	food = -1
+	food  = -1
+	empty = 0
+	wall  = 1
 )
 
 // ID is the player's id on the board

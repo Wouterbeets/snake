@@ -24,7 +24,7 @@ func main() {
 
 	var (
 		runs   = flag.Int("runs", 1, "number of experiments to run")
-		iter   = flag.Int("iterations", 50000, "number of iterations for experiment")
+		iter   = flag.Int("iterations", 500, "number of iterations for experiment")
 		cpath  = flag.String("config", "genn.json", "path to the configuration file")
 		epath  = flag.String("efficacy", "xor-samples.txt", "path for efficacy sample file")
 		aiOut  = flag.String("aiout", "ai.json", "path for ai")

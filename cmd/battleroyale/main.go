@@ -170,7 +170,7 @@ func main() {
 		nets = append(nets, &ai.NetWrapper{Ai: net})
 	}
 
-	framerate := 100 * time.Millisecond
+	framerate := 10 * time.Millisecond
 	sc := term.Screen{Input: make(chan [][]rune), UserInput: make(chan rune)}
 	players := []snake.Player{
 		&snake.Human{Input: sc.UserInput, Framerate: framerate},
@@ -178,11 +178,11 @@ func main() {
 	for _, n := range nets {
 		players = append(players, n)
 	}
-	g, err := snake.NewGame(50, 50, players, 20)
+	g, err := snake.NewGame(50, 50, players, 50)
 	if err != nil {
 		panic(err)
 	}
-	go sc.Run(framerate)
+	done := sc.Run(framerate)
 
 	runes := map[int8]rune{
 		-1: 'M',
@@ -202,13 +202,15 @@ func main() {
 		13: 'd',
 		14: 'e',
 	}
-	for i := 0; i < 10000; i++ {
+	for i := 0; i < 10000000; i++ {
 		gameOver, state := g.PlayRound()
 		sc.Input <- stateToRune(state, runes)
 		if gameOver {
+			close(sc.Input)
 			return
 		}
 	}
+	<-done
 }
 
 func stateToRune(state snake.Board, runes map[int8]rune) (disp [][]rune) {

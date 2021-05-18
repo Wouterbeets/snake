@@ -17,39 +17,9 @@ func (s Trainer) Search(eval evo.Evaluator, phenomes []evo.Phenome) (results []e
 		players[p.ID] = ai
 		playerSlice = append(playerSlice, ai)
 	}
-	playerSlice = append(playerSlice, &snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-		&snake.Random{},
-	)
 
-	g, _ := snake.NewGame(len(players)*3, len(players)*3, playerSlice, len(players)*10)
-	rounds := 1000
+	g, _ := snake.NewGame(len(players)*3, len(players)*3, playerSlice, len(players)*20)
+	rounds := 100000
 	for i := 0; i < rounds; i++ {
 		gameOver, _ := g.PlayRound()
 		for id, player := range players {
